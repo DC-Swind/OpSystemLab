@@ -1,0 +1,172 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	nes/cpu-internal.h	/^    byte A, X, Y; \/\/ Registers$/;"	m	struct:__anon3
+COMMON_H	nes/common.h	6;"	d
+CPU_H	nes/cpu.h	4;"	d
+CPU_INTERNAL_H	nes/cpu-internal.h	2;"	d
+CPU_RAM	nes/cpu-internal.h	/^byte CPU_RAM[0x8000];$/;"	v
+CPU_STATE	nes/cpu-internal.h	/^} CPU_STATE;$/;"	t	typeref:struct:__anon3
+DPL_KERNEL	x86/memory.h	4;"	d
+DPL_USER	x86/memory.h	5;"	d
+FALSE	common/const.h	5;"	d
+FCE_H	nes/fce.h	2;"	d
+FPS	nes/nes.h	1;"	d
+GateDescriptor	x86/memory.h	/^struct GateDescriptor {$/;"	s
+HZ	device/timer.h	4;"	d
+MEM_H	nes/memory.h	2;"	d
+NR_IRQ	x86/cpu.h	34;"	d
+NR_SEGMENTS	x86/memory.h	7;"	d
+NULL	common/const.h	7;"	d
+OAMADDR	nes/ppu-internal.h	/^    byte OAMADDR;   \/\/ $2003 write only$/;"	m	struct:__anon4
+OAMDATA	nes/ppu-internal.h	/^    byte OAMDATA;   \/\/ $2004$/;"	m	struct:__anon4
+P	nes/cpu-internal.h	/^    byte P; \/\/ Flag Register$/;"	m	struct:__anon3
+PC	nes/cpu-internal.h	/^    word PC; \/\/ Program Counter,$/;"	m	struct:__anon3
+PPUADDR	nes/ppu-internal.h	/^    word PPUADDR;   \/\/ $2006 write only x2$/;"	m	struct:__anon4
+PPUCTRL	nes/ppu-internal.h	/^    byte PPUCTRL;   \/\/ $2000 write only$/;"	m	struct:__anon4
+PPUDATA	nes/ppu-internal.h	/^    word PPUDATA;   \/\/ $2007$/;"	m	struct:__anon4
+PPUMASK	nes/ppu-internal.h	/^    byte PPUMASK;   \/\/ $2001 write only$/;"	m	struct:__anon4
+PPUSCROLL	nes/ppu-internal.h	/^	word PPUSCROLL;$/;"	m	struct:__anon4
+PPUSCROLL_X	nes/ppu-internal.h	/^    byte PPUSCROLL_X, PPUSCROLL_Y; \/\/ $2005 write only x2$/;"	m	struct:__anon4
+PPUSCROLL_Y	nes/ppu-internal.h	/^    byte PPUSCROLL_X, PPUSCROLL_Y; \/\/ $2005 write only x2$/;"	m	struct:__anon4
+PPUSTATUS	nes/ppu-internal.h	/^    byte PPUSTATUS; \/\/ $2002 read only$/;"	m	struct:__anon4
+PPU_H	nes/ppu.h	4;"	d
+PPU_INTERNAL_H	nes/ppu-internal.h	4;"	d
+PPU_RAM	nes/ppu.h	/^byte PPU_RAM[0x4000];$/;"	v
+PPU_SPRRAM	nes/ppu.h	/^byte PPU_SPRRAM[0x100];$/;"	v
+PPU_STATE	nes/ppu-internal.h	/^} PPU_STATE;$/;"	t	typeref:struct:__anon4
+PSG_H	nes/psg.h	7;"	d
+Pixel	nes/hal.h	/^struct Pixel {$/;"	s
+Pixel	nes/hal.h	/^typedef struct Pixel Pixel;$/;"	t	typeref:struct:Pixel
+PixelBuf	nes/hal.h	/^struct PixelBuf {$/;"	s
+PixelBuf	nes/hal.h	/^typedef struct PixelBuf PixelBuf;$/;"	t	typeref:struct:PixelBuf
+SCREEN_HEIGHT	nes/nes.h	3;"	d
+SCREEN_WIDTH	nes/nes.h	2;"	d
+SCR_HEIGHT	device/video.h	7;"	d
+SCR_SIZE	device/video.h	8;"	d
+SCR_WIDTH	device/video.h	6;"	d
+SEG_KERNEL_CODE	x86/memory.h	8;"	d
+SEG_KERNEL_DATA	x86/memory.h	9;"	d
+SP	nes/cpu-internal.h	/^    byte SP; \/\/ Stack Pointer,$/;"	m	struct:__anon3
+TRUE	common/const.h	4;"	d
+TrapFrame	x86/memory.h	/^struct TrapFrame {$/;"	s
+VMEM_ADDR	device/video.h	9;"	d
+X	nes/cpu-internal.h	/^    byte A, X, Y; \/\/ Registers$/;"	m	struct:__anon3
+Y	nes/cpu-internal.h	/^    byte A, X, Y; \/\/ Registers$/;"	m	struct:__anon3
+__ASSERT_H__	common/assert.h	2;"	d
+__COMMON_H__	common.h	2;"	d
+__CONST_H__	common/const.h	2;"	d
+__DEVICE_H__	device.h	2;"	d
+__FONT_H__	device/font.h	2;"	d
+__HAL_H__	nes/hal.h	2;"	d
+__IRQ_H__	x86/irq.h	2;"	d
+__STRING_H__	common/string.h	2;"	d
+__TIMER_H__	device/timer.h	2;"	d
+__TYPES_H__	common/types.h	2;"	d
+__VIDEO_H__	device/video.h	2;"	d
+__X86_CPU_H__	x86/cpu.h	2;"	d
+__X86_IO_H__	x86/io.h	2;"	d
+__X86_MEMORY_H__	x86/memory.h	2;"	d
+__pal	nes/fce.h	/^typedef struct __pal {$/;"	s
+__x86_H__	x86.h	2;"	d
+addr_received_high_byte	nes/ppu-internal.h	/^    bool addr_received_high_byte;$/;"	m	struct:__anon4
+assert	common/assert.h	7;"	d
+b	nes/fce.h	/^	int b;$/;"	m	struct:__pal
+b	nes/hal.h	/^	int r, g, b, c;$/;"	m	struct:Pixel
+break_bp	nes/cpu-internal.h	/^    break_bp      = 4,$/;"	e	enum:__anon2
+break_flag	nes/cpu-internal.h	/^    break_flag     = 0x10,$/;"	e	enum:__anon1
+buf	nes/hal.h	/^	Pixel buf[264 * 264];$/;"	m	struct:PixelBuf
+byte	nes/common.h	/^typedef uint8_t byte;$/;"	t
+c	nes/hal.h	/^	int r, g, b, c;$/;"	m	struct:Pixel
+carry_bp	nes/cpu-internal.h	/^    carry_bp      = 0,$/;"	e	enum:__anon2
+carry_flag	nes/cpu-internal.h	/^    carry_flag     = 0x01,$/;"	e	enum:__anon1
+cpu	nes/cpu-internal.h	/^CPU_STATE cpu;$/;"	v
+cpu_cycles	nes/cpu-internal.h	/^unsigned long long cpu_cycles;  \/\/ Total CPU Cycles Since Power Up (wraps)$/;"	v
+cpu_op_address_mode	nes/cpu-internal.h	/^void (*cpu_op_address_mode[256])();       \/\/ Array of address modes$/;"	v
+cpu_op_cycles	nes/cpu-internal.h	/^int cpu_op_cycles[256];                   \/\/ CPU cycles used by instructions$/;"	v
+cpu_op_handler	nes/cpu-internal.h	/^void (*cpu_op_handler[256])();            \/\/ Array of instruction function pointers$/;"	v
+cpu_op_in_base_instruction_set	nes/cpu-internal.h	/^bool cpu_op_in_base_instruction_set[256]; \/\/ true if instruction is in base 6502 instruction set$/;"	v
+cpu_op_name	nes/cpu-internal.h	/^char *cpu_op_name[256];                   \/\/ Instruction names$/;"	v
+cpu_p_bp	nes/cpu-internal.h	/^} cpu_p_bp;$/;"	t	typeref:enum:__anon2
+cpu_p_flag	nes/cpu-internal.h	/^} cpu_p_flag;$/;"	t	typeref:enum:__anon1
+cpu_zn_flag_table	nes/cpu-internal.h	/^static const byte cpu_zn_flag_table[256] =$/;"	v
+decimal_bp	nes/cpu-internal.h	/^    decimal_bp    = 3,$/;"	e	enum:__anon2
+decimal_flag	nes/cpu-internal.h	/^    decimal_flag   = 0x08,$/;"	e	enum:__anon1
+disable_interrupt	x86/cpu.h	/^disable_interrupt(void) {$/;"	f
+draw_pixel	device/video.h	/^draw_pixel(int x, int y, int color) {$/;"	f
+dword	nes/common.h	/^typedef uint32_t dword;$/;"	t
+eax	x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ebp	x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ebx	x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ecx	x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+edi	x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+edx	x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+enable_interrupt	x86/cpu.h	/^enable_interrupt(void) {$/;"	f
+esi	x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+g	nes/fce.h	/^	int g;$/;"	m	struct:__pal
+g	nes/hal.h	/^	int r, g, b, c;$/;"	m	struct:Pixel
+in_byte	x86/io.h	/^in_byte(uint16_t port) {$/;"	f
+int16_t	common/types.h	/^typedef          short int16_t;$/;"	t
+int32_t	common/types.h	/^typedef          int   int32_t;$/;"	t
+int8_t	common/types.h	/^typedef          char  int8_t;$/;"	t
+interrupt_bp	nes/cpu-internal.h	/^    interrupt_bp  = 2,$/;"	e	enum:__anon2
+interrupt_flag	nes/cpu-internal.h	/^    interrupt_flag = 0x04,$/;"	e	enum:__anon1
+irq	x86/memory.h	/^	int32_t irq;$/;"	m	struct:TrapFrame
+len	nes/rom.h	/^static int len = 41104;$/;"	v
+mirroring	nes/ppu-internal.h	/^    int mirroring, mirroring_xor;$/;"	m	struct:__anon4
+mirroring_xor	nes/ppu-internal.h	/^    int mirroring, mirroring_xor;$/;"	m	struct:__anon4
+mmc_id	nes/mmc.h	/^byte mmc_id;$/;"	v
+negative_bp	nes/cpu-internal.h	/^    negative_bp   = 7$/;"	e	enum:__anon2
+negative_flag	nes/cpu-internal.h	/^    negative_flag  = 0x80$/;"	e	enum:__anon1
+offset_15_0	x86/memory.h	/^	uint32_t offset_15_0      : 16;$/;"	m	struct:GateDescriptor
+offset_31_16	x86/memory.h	/^	uint32_t offset_31_16     : 16;$/;"	m	struct:GateDescriptor
+op_address	nes/cpu-internal.h	/^int op_value, op_address; \/\/ Arguments for current instruction$/;"	v
+op_code	nes/cpu-internal.h	/^byte op_code;             \/\/ Current instruction code$/;"	v
+op_cycles	nes/cpu-internal.h	/^int op_cycles;            \/\/ Additional instruction cycles used (e.g. when paging occurs)$/;"	v
+op_value	nes/cpu-internal.h	/^int op_value, op_address; \/\/ Arguments for current instruction$/;"	v
+out_byte	x86/io.h	/^out_byte(uint16_t port, int8_t data) {$/;"	f
+overflow_bp	nes/cpu-internal.h	/^    overflow_bp   = 6,$/;"	e	enum:__anon2
+overflow_flag	nes/cpu-internal.h	/^    overflow_flag  = 0x40,$/;"	e	enum:__anon1
+pad0	x86/memory.h	/^	uint32_t pad0             : 8;$/;"	m	struct:GateDescriptor
+pal	nes/fce.h	/^} pal;$/;"	t	typeref:struct:__pal
+palette	nes/fce.h	/^static const pal palette[64] = {$/;"	v
+pixbuf_add	nes/hal.h	27;"	d
+pixbuf_clean	nes/hal.h	21;"	d
+ppu	nes/ppu-internal.h	/^PPU_STATE ppu;$/;"	v
+ppu_base_nametable_addresses	nes/ppu-internal.h	/^static const word ppu_base_nametable_addresses[4] = { 0x2000, 0x2400, 0x2800, 0x2C00 };$/;"	v
+ppu_l_h_addition_flip_table	nes/ppu-internal.h	/^byte ppu_l_h_addition_flip_table[256][256][8];$/;"	v
+ppu_l_h_addition_table	nes/ppu-internal.h	/^byte ppu_l_h_addition_table[256][256][8];$/;"	v
+ppu_latch	nes/ppu-internal.h	/^byte ppu_latch;$/;"	v
+ppu_screen_background	nes/ppu-internal.h	/^byte ppu_screen_background[264][248];$/;"	v
+ppu_sprite_hit_occured	nes/ppu-internal.h	/^bool ppu_sprite_hit_occured = false;$/;"	v
+present	x86/memory.h	/^	uint32_t present          : 1;$/;"	m	struct:GateDescriptor
+privilege_level	x86/memory.h	/^	uint32_t privilege_level  : 2;$/;"	m	struct:GateDescriptor
+qword	nes/common.h	/^typedef uint64_t qword;$/;"	t
+r	nes/fce.h	/^	int r;$/;"	m	struct:__pal
+r	nes/hal.h	/^	int r, g, b, c;$/;"	m	struct:Pixel
+ready	nes/ppu-internal.h	/^    bool ready;$/;"	m	struct:__anon4
+save_idt	x86/cpu.h	/^save_idt(void *addr, uint32_t size) {$/;"	f
+scanline	nes/ppu-internal.h	/^    int x, scanline;$/;"	m	struct:__anon4
+scroll_received_x	nes/ppu-internal.h	/^    bool scroll_received_x;$/;"	m	struct:__anon4
+segment	x86/memory.h	/^	uint32_t segment          : 16;$/;"	m	struct:GateDescriptor
+size	nes/hal.h	/^	int size;$/;"	m	struct:PixelBuf
+size_t	common/types.h	/^typedef unsigned int   size_t;$/;"	t
+system	x86/memory.h	/^	uint32_t system           : 1;$/;"	m	struct:GateDescriptor
+table	nes/rom.h	/^static int table[1024576]={$/;"	v
+type	x86/memory.h	/^	uint32_t type             : 4;$/;"	m	struct:GateDescriptor
+uint16_t	common/types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	common/types.h	/^typedef unsigned int   uint32_t;$/;"	t
+uint8_t	common/types.h	/^typedef unsigned char  uint8_t;$/;"	t
+unused_bp	nes/cpu-internal.h	/^    unused_bp     = 5,$/;"	e	enum:__anon2
+unused_flag	nes/cpu-internal.h	/^    unused_flag    = 0x20,$/;"	e	enum:__anon1
+wait_for_interrupt	x86/cpu.h	/^wait_for_interrupt() {$/;"	f
+word	nes/common.h	/^typedef uint16_t word;$/;"	t
+x	nes/hal.h	/^	int x, y;$/;"	m	struct:Pixel
+x	nes/ppu-internal.h	/^    int x, scanline;$/;"	m	struct:__anon4
+xxx	x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+y	nes/hal.h	/^	int x, y;$/;"	m	struct:Pixel
+zero_bp	nes/cpu-internal.h	/^    zero_bp       = 1,$/;"	e	enum:__anon2
+zero_flag	nes/cpu-internal.h	/^    zero_flag      = 0x02,$/;"	e	enum:__anon1

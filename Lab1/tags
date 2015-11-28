@@ -1,0 +1,172 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	src/main.c	/^void A(){$/;"	f
+ASFLAGS	Makefile	/^ASFLAGS = -ggdb -m32 -MD$/;"	m
+B	src/main.c	/^void B(){$/;"	f
+BLUE_SCREEN_TEXT	src/lib/abort.c	23;"	d	file:
+C	src/main.c	/^void C(){$/;"	f
+CC	Makefile	/^CC = gcc$/;"	m
+CFILES	Makefile	/^CFILES = $(shell find src\/ -name "*.c")$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -m32 -march=i386 -static -MD -std=gnu89 -ggdb \\$/;"	m
+DPL_KERNEL	include/x86/memory.h	4;"	d
+DPL_USER	include/x86/memory.h	5;"	d
+ELFHeader	boot/boot.h	/^struct ELFHeader {$/;"	s
+FALSE	include/common/const.h	5;"	d
+FREQ_8253	src/device/timer.c	7;"	d	file:
+GDT_ENTRY	boot/asm.h	2;"	d
+GITFLAGS	Makefile	/^GITFLAGS = -q --author='tracer <tracer@njuoslab.org>' --no-verify --allow-empty$/;"	m
+GateDescriptor	include/x86/memory.h	/^struct GateDescriptor {$/;"	s
+HZ	include/device/timer.h	4;"	d
+INTERRUPT_GATE_32	src/irq/idt.c	3;"	d	file:
+IRQ_SLAVE	src/irq/i8259.c	5;"	d	file:
+LD	Makefile	/^LD = ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -melf_i386$/;"	m
+MAX_THREADS_N	src/thread.c	8;"	d	file:
+NR_IRQ	include/x86/cpu.h	34;"	d
+NR_SEGMENTS	include/x86/memory.h	7;"	d
+NULL	include/common/const.h	7;"	d
+OBJS	Makefile	/^OBJS = $(CFILES:.c=.o) $(SFILES:.S=.o)$/;"	m
+PID	include/x86/memory.h	/^	int PID;$/;"	m	struct:THREAD
+PORT_PIC_MASTER	src/irq/i8259.c	3;"	d	file:
+PORT_PIC_SLAVE	src/irq/i8259.c	4;"	d	file:
+ProgramHeader	boot/boot.h	/^struct ProgramHeader {$/;"	s
+QEMU	Makefile	/^QEMU = qemu-system-i386$/;"	m
+SECTSIZE	boot/main.c	11;"	d	file:
+SEG_ASM	boot/asm.h	9;"	d
+SEG_KERNEL_CODE	include/x86/memory.h	8;"	d
+SEG_KERNEL_DATA	include/x86/memory.h	9;"	d
+SEG_NULLASM	boot/asm.h	5;"	d
+SERIAL_PORT	include/device/serial.h	6;"	d
+SFILES	Makefile	/^SFILES = $(shell find src\/ -name "*.S")$/;"	m
+THREAD	include/x86/memory.h	/^typedef struct THREAD {$/;"	s
+TIMER_PORT	src/device/timer.c	6;"	d	file:
+TRAP_GATE_32	src/irq/idt.c	4;"	d	file:
+TRUE	include/common/const.h	4;"	d
+Thread	include/x86/memory.h	/^} Thread;$/;"	t	typeref:struct:THREAD
+Threads_arr	src/thread.c	/^Thread Threads_arr[MAX_THREADS_N];$/;"	v
+TrapFrame	include/x86/memory.h	/^struct TrapFrame {$/;"	s
+_PRINTF_	include/printf.h	2;"	d
+_PROTECT_H	include/protect.h	2;"	d
+_THREAD_H	include/thread.h	2;"	d
+__ASSERT_H__	include/common/assert.h	2;"	d
+__COMMON_H__	include/common.h	2;"	d
+__CONST_H__	include/common/const.h	2;"	d
+__DEVICE_H__	include/device.h	2;"	d
+__IRQ_H__	include/x86/irq.h	2;"	d
+__SERIAL_H__	include/device/serial.h	2;"	d
+__TIMER_H__	include/device/timer.h	2;"	d
+__TYPES_H__	include/common/types.h	2;"	d
+__X86_CPU_H__	include/x86/cpu.h	2;"	d
+__X86_H__	include/x86.h	2;"	d
+__X86_IO_H__	include/x86/io.h	2;"	d
+__X86_MEMORY_H__	include/x86/memory.h	2;"	d
+abort	src/lib/abort.c	/^abort(const char *fname, int line) {$/;"	f
+align	boot/boot.h	/^	unsigned int align;$/;"	m	struct:ProgramHeader
+append	src/lib/abort.c	/^append(char **p, const char *str) {$/;"	f	file:
+asm_do_irq	src/irq/do_irq.S	/^asm_do_irq:$/;"	l
+assert	include/common/assert.h	7;"	d
+bootmain	boot/main.c	/^bootmain(void) {$/;"	f
+create_kthread	src/thread.c	/^Thread *create_kthread(void(*entry)(void)){$/;"	f
+cs	include/x86/memory.h	/^	uint32_t cs;$/;"	m	struct:TrapFrame
+current	src/thread.c	/^volatile Thread *current = NULL;$/;"	v
+disable_interrupt	include/x86/cpu.h	/^disable_interrupt(void) {$/;"	f
+display_message	src/lib/abort.c	/^display_message(const char *file, int line) {$/;"	f	file:
+eax	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ebp	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ebx	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ecx	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+edi	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+edx	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+efl	include/x86/memory.h	/^	uint32_t efl;$/;"	m	struct:TrapFrame
+ehsize	boot/boot.h	/^	unsigned short ehsize;$/;"	m	struct:ELFHeader
+eip	include/x86/memory.h	/^	uint32_t eip;$/;"	m	struct:TrapFrame
+elf	boot/boot.h	/^	unsigned char  elf[12];$/;"	m	struct:ELFHeader
+enable_interrupt	include/x86/cpu.h	/^enable_interrupt(void) {$/;"	f
+entry	boot/boot.h	/^	unsigned int   entry;$/;"	m	struct:ELFHeader
+entry	src/main.c	/^entry(void) {$/;"	f
+entrytest	include/x86/memory.h	/^	uint32_t entrytest;$/;"	m	struct:TrapFrame
+esi	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+filesz	boot/boot.h	/^	unsigned int filesz;$/;"	m	struct:ProgramHeader
+flags	boot/boot.h	/^	unsigned int   flags;$/;"	m	struct:ELFHeader
+flags	boot/boot.h	/^	unsigned int flags;$/;"	m	struct:ProgramHeader
+g	src/thread.c	/^void g(){$/;"	f
+gdt	boot/start.S	/^gdt:$/;"	l
+gdtdesc	boot/start.S	/^gdtdesc:                           # GDT描述符$/;"	l
+idt	src/irq/idt.c	/^struct GateDescriptor idt[NR_IRQ];$/;"	v	typeref:struct:GateDescriptor
+in_byte	boot/boot.h	/^in_byte(short port) {$/;"	f
+in_byte	include/x86/io.h	/^in_byte(uint16_t port) {$/;"	f
+in_long	boot/boot.h	/^in_long(short port) {$/;"	f
+init_idt	src/irq/idt.c	/^void init_idt() {$/;"	f
+init_intr	src/irq/i8259.c	/^init_intr(void) {$/;"	f
+init_serial	src/device/serial.c	/^init_serial(void) {$/;"	f
+init_threads	src/thread.c	/^void init_threads(){$/;"	f
+init_timer	src/device/timer.c	/^init_timer(void) {$/;"	f
+int16_t	include/common/types.h	/^typedef          short int16_t;$/;"	t
+int32_t	include/common/types.h	/^typedef          int   int32_t;$/;"	t
+int8_t	include/common/types.h	/^typedef          char  int8_t;$/;"	t
+irq	include/x86/memory.h	/^	int32_t irq;$/;"	m	struct:TrapFrame
+irq_handle	src/irq/irq_handle.c	/^irq_handle(struct TrapFrame *tf) {$/;"	f
+itoa	src/lib/abort.c	/^itoa(int a) {$/;"	f	file:
+kstack	include/x86/memory.h	/^	uint8_t kstack[2000];$/;"	m	struct:THREAD
+lock	include/x86/memory.h	/^	int lock;$/;"	m	struct:THREAD
+lock	src/protect.c	/^void lock(){$/;"	f
+machine	boot/boot.h	/^	unsigned short machine;$/;"	m	struct:ELFHeader
+magic	boot/boot.h	/^	unsigned int   magic;$/;"	m	struct:ELFHeader
+memsz	boot/boot.h	/^	unsigned int memsz;$/;"	m	struct:ProgramHeader
+next	include/x86/memory.h	/^	struct THREAD *next;$/;"	m	struct:THREAD	typeref:struct:THREAD::THREAD
+off	boot/boot.h	/^	unsigned int off;$/;"	m	struct:ProgramHeader
+offset_15_0	include/x86/memory.h	/^	uint32_t offset_15_0      : 16;$/;"	m	struct:GateDescriptor
+offset_31_16	include/x86/memory.h	/^	uint32_t offset_31_16     : 16;$/;"	m	struct:GateDescriptor
+out_byte	boot/boot.h	/^out_byte(short port, char data) {$/;"	f
+out_byte	include/x86/io.h	/^out_byte(uint16_t port, int8_t data) {$/;"	f
+output_d	src/printf.c	/^int output_d(int num){$/;"	f
+output_x	src/printf.c	/^int output_x(int num){$/;"	f
+pad0	include/x86/memory.h	/^	uint32_t pad0             : 8;$/;"	m	struct:GateDescriptor
+paddr	boot/boot.h	/^	unsigned int paddr;$/;"	m	struct:ProgramHeader
+phentsize	boot/boot.h	/^	unsigned short phentsize;$/;"	m	struct:ELFHeader
+phnum	boot/boot.h	/^	unsigned short phnum;$/;"	m	struct:ELFHeader
+phoff	boot/boot.h	/^	unsigned int   phoff;$/;"	m	struct:ELFHeader
+present	include/x86/memory.h	/^	uint32_t present          : 1;$/;"	m	struct:GateDescriptor
+prev	include/x86/memory.h	/^	struct THREAD *prev;$/;"	m	struct:THREAD	typeref:struct:THREAD::THREAD
+printf	src/printf.c	/^int printf(const char *format, ...){$/;"	f
+privilege_level	include/x86/memory.h	/^	uint32_t privilege_level  : 2;$/;"	m	struct:GateDescriptor
+putchar	src/device/serial.c	/^putchar(char ch) {$/;"	f
+readsect	boot/main.c	/^readsect(void *dst, int offset) {$/;"	f
+readseg	boot/main.c	/^readseg(unsigned char *pa, int count, int offset) {$/;"	f
+save_idt	include/x86/cpu.h	/^save_idt(void *addr, uint32_t size) {$/;"	f
+segment	include/x86/memory.h	/^	uint32_t segment          : 16;$/;"	m	struct:GateDescriptor
+serial_idle	src/device/serial.c	/^serial_idle(void) {$/;"	f	file:
+set_intr	src/irq/idt.c	/^set_intr(struct GateDescriptor *ptr, uint32_t selector, uint32_t offset, uint32_t dpl) {$/;"	f	file:
+set_trap	src/irq/idt.c	/^set_trap(struct GateDescriptor *ptr, uint32_t selector, uint32_t offset, uint32_t dpl) {$/;"	f	file:
+shentsize	boot/boot.h	/^	unsigned short shentsize;$/;"	m	struct:ELFHeader
+shnum	boot/boot.h	/^	unsigned short shnum;$/;"	m	struct:ELFHeader
+shoff	boot/boot.h	/^	unsigned int   shoff;$/;"	m	struct:ELFHeader
+shstrndx	boot/boot.h	/^	unsigned short shstrndx;$/;"	m	struct:ELFHeader
+size_t	include/common/types.h	/^typedef unsigned int   size_t;$/;"	t
+sleep	include/x86/memory.h	/^	int sleep;$/;"	m	struct:THREAD
+sleep	src/protect.c	/^void sleep(){$/;"	f
+start	boot/start.S	/^start:$/;"	l
+start32	boot/start.S	/^start32:$/;"	l
+stop_thread	src/thread.c	/^void stop_thread()$/;"	f
+system	include/x86/memory.h	/^	uint32_t system           : 1;$/;"	m	struct:GateDescriptor
+test	src/printf.c	/^void test(const char *format,int *d,int *c){$/;"	f
+tf	include/x86/memory.h	/^	struct TrapFrame *tf;$/;"	m	struct:THREAD	typeref:struct:THREAD::TrapFrame
+threadA	src/main.c	/^Thread *threadA;$/;"	v
+threadlist	src/thread.c	/^Thread * threadlist = NULL;$/;"	v
+type	boot/boot.h	/^	unsigned int type;$/;"	m	struct:ProgramHeader
+type	boot/boot.h	/^	unsigned short type;$/;"	m	struct:ELFHeader
+type	include/x86/memory.h	/^	uint32_t type             : 4;$/;"	m	struct:GateDescriptor
+uint16_t	include/common/types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	include/common/types.h	/^typedef unsigned int   uint32_t;$/;"	t
+uint8_t	include/common/types.h	/^typedef unsigned char  uint8_t;$/;"	t
+unlock	src/protect.c	/^void unlock(){$/;"	f
+vaddr	boot/boot.h	/^	unsigned int vaddr;$/;"	m	struct:ProgramHeader
+version	boot/boot.h	/^	unsigned int   version;$/;"	m	struct:ELFHeader
+wait_for_interrupt	include/x86/cpu.h	/^wait_for_interrupt() {$/;"	f
+waitdisk	boot/main.c	/^waitdisk(void) {$/;"	f
+wakeup	src/protect.c	/^void wakeup(Thread *who){$/;"	f
+xxx	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame

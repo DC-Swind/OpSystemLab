@@ -1,0 +1,46 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ELFHeader	boot.h	/^struct ELFHeader {$/;"	s
+GDT_ENTRY	asm.h	2;"	d
+ProgramHeader	boot.h	/^struct ProgramHeader {$/;"	s
+SECTSIZE	main.c	11;"	d	file:
+SEG_ASM	asm.h	9;"	d
+SEG_NULLASM	asm.h	5;"	d
+align	boot.h	/^	unsigned int align;$/;"	m	struct:ProgramHeader
+bootmain	main.c	/^bootmain(void) {$/;"	f
+ehsize	boot.h	/^	unsigned short ehsize;$/;"	m	struct:ELFHeader
+elf	boot.h	/^	unsigned char  elf[12];$/;"	m	struct:ELFHeader
+entry	boot.h	/^	unsigned int   entry;$/;"	m	struct:ELFHeader
+filesz	boot.h	/^	unsigned int filesz;$/;"	m	struct:ProgramHeader
+flags	boot.h	/^	unsigned int   flags;$/;"	m	struct:ELFHeader
+flags	boot.h	/^	unsigned int flags;$/;"	m	struct:ProgramHeader
+gdt	start.S	/^gdt:$/;"	l
+gdtdesc	start.S	/^gdtdesc:                           # GDT描述符$/;"	l
+in_byte	boot.h	/^in_byte(short port) {$/;"	f
+in_long	boot.h	/^in_long(short port) {$/;"	f
+machine	boot.h	/^	unsigned short machine;$/;"	m	struct:ELFHeader
+magic	boot.h	/^	unsigned int   magic;$/;"	m	struct:ELFHeader
+memsz	boot.h	/^	unsigned int memsz;$/;"	m	struct:ProgramHeader
+off	boot.h	/^	unsigned int off;$/;"	m	struct:ProgramHeader
+out_byte	boot.h	/^out_byte(short port, char data) {$/;"	f
+paddr	boot.h	/^	unsigned int paddr;$/;"	m	struct:ProgramHeader
+phentsize	boot.h	/^	unsigned short phentsize;$/;"	m	struct:ELFHeader
+phnum	boot.h	/^	unsigned short phnum;$/;"	m	struct:ELFHeader
+phoff	boot.h	/^	unsigned int   phoff;$/;"	m	struct:ELFHeader
+readsect	main.c	/^readsect(void *dst, int offset) {$/;"	f
+readseg	main.c	/^readseg(unsigned char *pa, int count, int offset) {$/;"	f
+shentsize	boot.h	/^	unsigned short shentsize;$/;"	m	struct:ELFHeader
+shnum	boot.h	/^	unsigned short shnum;$/;"	m	struct:ELFHeader
+shoff	boot.h	/^	unsigned int   shoff;$/;"	m	struct:ELFHeader
+shstrndx	boot.h	/^	unsigned short shstrndx;$/;"	m	struct:ELFHeader
+start	start.S	/^start:$/;"	l
+start32	start.S	/^start32:$/;"	l
+type	boot.h	/^	unsigned int type;$/;"	m	struct:ProgramHeader
+type	boot.h	/^	unsigned short type;$/;"	m	struct:ELFHeader
+vaddr	boot.h	/^	unsigned int vaddr;$/;"	m	struct:ProgramHeader
+version	boot.h	/^	unsigned int   version;$/;"	m	struct:ELFHeader
+waitdisk	main.c	/^waitdisk(void) {$/;"	f

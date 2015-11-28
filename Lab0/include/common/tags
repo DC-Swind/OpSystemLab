@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FALSE	const.h	5;"	d
+NULL	const.h	7;"	d
+TRUE	const.h	4;"	d
+__ASSERT_H__	assert.h	2;"	d
+__CONST_H__	const.h	2;"	d
+__STRING_H__	string.h	2;"	d
+__TYPES_H__	types.h	2;"	d
+assert	assert.h	7;"	d
+int16_t	types.h	/^typedef          short int16_t;$/;"	t
+int32_t	types.h	/^typedef          int   int32_t;$/;"	t
+int8_t	types.h	/^typedef          char  int8_t;$/;"	t
+size_t	types.h	/^typedef unsigned int   size_t;$/;"	t
+uint16_t	types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	types.h	/^typedef unsigned int   uint32_t;$/;"	t
+uint8_t	types.h	/^typedef unsigned char  uint8_t;$/;"	t

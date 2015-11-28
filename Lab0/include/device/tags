@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+HZ	timer.h	4;"	d
+SCR_HEIGHT	video.h	7;"	d
+SCR_SIZE	video.h	8;"	d
+SCR_WIDTH	video.h	6;"	d
+VMEM_ADDR	video.h	9;"	d
+__FONT_H__	font.h	2;"	d
+__TIMER_H__	timer.h	2;"	d
+__VIDEO_H__	video.h	2;"	d
+draw_pixel	video.h	/^draw_pixel(int x, int y, int color) {$/;"	f

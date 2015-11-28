@@ -1,0 +1,244 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLUE_SCREEN_TEXT	lib/abort.c	13;"	d	file:
+CPU_OP_BIS	emu6502/cpu.c	271;"	d	file:
+CPU_OP_EIS	emu6502/cpu.c	287;"	d	file:
+CPU_OP_NII	emu6502/cpu.c	279;"	d	file:
+FREQ_8253	device/timer.c	7;"	d	file:
+INTERRUPT_GATE_32	irq/idt.c	3;"	d	file:
+IRQ_SLAVE	irq/i8259.c	5;"	d	file:
+MMC_MAX_PAGE_COUNT	emu6502/mmc.c	5;"	d	file:
+M_common	lib/common.c	7;"	d	file:
+PI	main.c	20;"	d	file:
+PORT_PIC_MASTER	irq/i8259.c	3;"	d	file:
+PORT_PIC_SLAVE	irq/i8259.c	4;"	d	file:
+TIMER_PORT	device/timer.c	6;"	d	file:
+TRAP_GATE_32	irq/idt.c	4;"	d	file:
+____FE____	emu6502/cpu.c	/^void ____FE____() { \/* Instruction for future Extension *\/ }$/;"	f
+abort	lib/abort.c	/^abort(const char *fname, int line) {$/;"	f
+append	lib/abort.c	/^append(char **p, const char *str) {$/;"	f	file:
+asm_do_irq	irq/do_irq.S	/^asm_do_irq:$/;"	l
+bbg	fce/pixbuf.c	/^PixelBuf bg, bbg, fg;$/;"	v
+bg	fce/pixbuf.c	/^PixelBuf bg, bbg, fg;$/;"	v
+blue_screen	lib/abort.c	/^blue_screen(const char *file, int line) {$/;"	f	file:
+chr_block_count	fce/fce.c	/^    byte chr_block_count;$/;"	m	struct:__anon1	file:
+common_bit_set	lib/common.c	/^bool common_bit_set(long long value, byte position) { return value & (1L << position); }$/;"	f
+cpu_address_absolute	emu6502/cpu-addressing.c	/^void cpu_address_absolute()$/;"	f
+cpu_address_absolute_x	emu6502/cpu-addressing.c	/^void cpu_address_absolute_x()$/;"	f
+cpu_address_absolute_y	emu6502/cpu-addressing.c	/^void cpu_address_absolute_y()$/;"	f
+cpu_address_immediate	emu6502/cpu-addressing.c	/^void cpu_address_immediate()$/;"	f
+cpu_address_implied	emu6502/cpu-addressing.c	/^void cpu_address_implied()$/;"	f
+cpu_address_indirect	emu6502/cpu-addressing.c	/^void cpu_address_indirect()$/;"	f
+cpu_address_indirect_x	emu6502/cpu-addressing.c	/^void cpu_address_indirect_x()$/;"	f
+cpu_address_indirect_y	emu6502/cpu-addressing.c	/^void cpu_address_indirect_y()$/;"	f
+cpu_address_relative	emu6502/cpu-addressing.c	/^void cpu_address_relative()$/;"	f
+cpu_address_zero_page	emu6502/cpu-addressing.c	/^void cpu_address_zero_page()$/;"	f
+cpu_address_zero_page_x	emu6502/cpu-addressing.c	/^void cpu_address_zero_page_x()$/;"	f
+cpu_address_zero_page_y	emu6502/cpu-addressing.c	/^void cpu_address_zero_page_y()$/;"	f
+cpu_branch	emu6502/cpu.c	49;"	d	file:
+cpu_clock	emu6502/cpu.c	/^inline unsigned long long cpu_clock()$/;"	f
+cpu_compare	emu6502/cpu.c	50;"	d	file:
+cpu_flag_set	emu6502/cpu.c	42;"	d	file:
+cpu_init	emu6502/cpu.c	/^void cpu_init()$/;"	f
+cpu_interrupt	emu6502/cpu.c	/^void cpu_interrupt()$/;"	f
+cpu_irq_interrupt_address	emu6502/cpu.c	/^inline word cpu_irq_interrupt_address()   { return memory_readw(0xFFFE); }$/;"	f
+cpu_modify_flag	emu6502/cpu.c	43;"	d	file:
+cpu_nmi_interrupt_address	emu6502/cpu.c	/^inline word cpu_nmi_interrupt_address()   { return memory_readw(0xFFFA); }$/;"	f
+cpu_op_adc	emu6502/cpu.c	/^void cpu_op_adc()$/;"	f
+cpu_op_and	emu6502/cpu.c	/^void cpu_op_and() { cpu_update_zn_flags(cpu.A &= op_value); }$/;"	f
+cpu_op_asl	emu6502/cpu.c	/^void cpu_op_asl()$/;"	f
+cpu_op_asla	emu6502/cpu.c	/^void cpu_op_asla()$/;"	f
+cpu_op_aso	emu6502/cpu.c	/^void cpu_op_aso() { cpu_op_asl(); cpu_op_ora(); }$/;"	f
+cpu_op_axa	emu6502/cpu.c	/^void cpu_op_axa() { memory_writeb(op_address, cpu.A & cpu.X & (op_address >> 8)); }$/;"	f
+cpu_op_axs	emu6502/cpu.c	/^void cpu_op_axs() { memory_writeb(op_address, cpu.A & cpu.X); }$/;"	f
+cpu_op_bcc	emu6502/cpu.c	/^void cpu_op_bcc() { cpu_branch(!cpu_flag_set(carry_bp));    }$/;"	f
+cpu_op_bcs	emu6502/cpu.c	/^void cpu_op_bcs() { cpu_branch(cpu_flag_set(carry_bp));     }$/;"	f
+cpu_op_beq	emu6502/cpu.c	/^void cpu_op_beq() { cpu_branch(cpu_flag_set(zero_bp));      }$/;"	f
+cpu_op_bit	emu6502/cpu.c	/^void cpu_op_bit() { cpu_modify_flag(zero_bp, !(cpu.A & op_value)); cpu.P = (cpu.P & 0x3F) | (0xC0 & op_value); }$/;"	f
+cpu_op_bmi	emu6502/cpu.c	/^void cpu_op_bmi() { cpu_branch(cpu_flag_set(negative_bp));  }$/;"	f
+cpu_op_bne	emu6502/cpu.c	/^void cpu_op_bne() { cpu_branch(!cpu_flag_set(zero_bp));     }$/;"	f
+cpu_op_bpl	emu6502/cpu.c	/^void cpu_op_bpl() { cpu_branch(!cpu_flag_set(negative_bp)); }$/;"	f
+cpu_op_brk	emu6502/cpu.c	/^void cpu_op_brk() { cpu_stack_pushw(cpu.PC - 1); cpu_stack_pushb(cpu.P); cpu.P |= unused_flag | break_flag; cpu.PC = cpu_nmi_interrupt_address(); }$/;"	f
+cpu_op_bvc	emu6502/cpu.c	/^void cpu_op_bvc() { cpu_branch(!cpu_flag_set(overflow_bp)); }$/;"	f
+cpu_op_bvs	emu6502/cpu.c	/^void cpu_op_bvs() { cpu_branch(cpu_flag_set(overflow_bp));  }$/;"	f
+cpu_op_clc	emu6502/cpu.c	/^void cpu_op_clc() { cpu_unset_flag(carry_bp);     }$/;"	f
+cpu_op_cld	emu6502/cpu.c	/^void cpu_op_cld() { cpu_unset_flag(decimal_bp);   }$/;"	f
+cpu_op_cli	emu6502/cpu.c	/^void cpu_op_cli() { cpu_unset_flag(interrupt_bp); }$/;"	f
+cpu_op_clv	emu6502/cpu.c	/^void cpu_op_clv() { cpu_unset_flag(overflow_bp);  }$/;"	f
+cpu_op_cmp	emu6502/cpu.c	/^void cpu_op_cmp() { cpu_compare(cpu.A); }$/;"	f
+cpu_op_cpx	emu6502/cpu.c	/^void cpu_op_cpx() { cpu_compare(cpu.X); }$/;"	f
+cpu_op_cpy	emu6502/cpu.c	/^void cpu_op_cpy() { cpu_compare(cpu.Y); }$/;"	f
+cpu_op_dcm	emu6502/cpu.c	/^void cpu_op_dcm()$/;"	f
+cpu_op_dec	emu6502/cpu.c	/^void cpu_op_dec() { byte result = op_value - 1; memory_writeb(op_address, result); cpu_update_zn_flags(result); }$/;"	f
+cpu_op_dex	emu6502/cpu.c	/^void cpu_op_dex() { cpu_update_zn_flags(--cpu.X); }$/;"	f
+cpu_op_dey	emu6502/cpu.c	/^void cpu_op_dey() { cpu_update_zn_flags(--cpu.Y); }$/;"	f
+cpu_op_eor	emu6502/cpu.c	/^void cpu_op_eor() { cpu_update_zn_flags(cpu.A ^= op_value); }$/;"	f
+cpu_op_inc	emu6502/cpu.c	/^void cpu_op_inc() { byte result = op_value + 1; memory_writeb(op_address, result); cpu_update_zn_flags(result); }$/;"	f
+cpu_op_ins	emu6502/cpu.c	/^void cpu_op_ins()$/;"	f
+cpu_op_inx	emu6502/cpu.c	/^void cpu_op_inx() { cpu_update_zn_flags(++cpu.X); }$/;"	f
+cpu_op_iny	emu6502/cpu.c	/^void cpu_op_iny() { cpu_update_zn_flags(++cpu.Y); }$/;"	f
+cpu_op_jmp	emu6502/cpu.c	/^void cpu_op_jmp() { cpu.PC = op_address; }$/;"	f
+cpu_op_jsr	emu6502/cpu.c	/^void cpu_op_jsr() { cpu_stack_pushw(cpu.PC - 1); cpu.PC = op_address; }$/;"	f
+cpu_op_lax	emu6502/cpu.c	/^void cpu_op_lax() { cpu_update_zn_flags(cpu.A = cpu.X = op_value); }$/;"	f
+cpu_op_lda	emu6502/cpu.c	/^void cpu_op_lda() { cpu_update_zn_flags(cpu.A = op_value); }$/;"	f
+cpu_op_ldx	emu6502/cpu.c	/^void cpu_op_ldx() { cpu_update_zn_flags(cpu.X = op_value); }$/;"	f
+cpu_op_ldy	emu6502/cpu.c	/^void cpu_op_ldy() { cpu_update_zn_flags(cpu.Y = op_value); }$/;"	f
+cpu_op_lse	emu6502/cpu.c	/^void cpu_op_lse() { cpu_op_lsr(); cpu_op_eor(); }$/;"	f
+cpu_op_lsr	emu6502/cpu.c	/^void cpu_op_lsr()$/;"	f
+cpu_op_lsra	emu6502/cpu.c	/^void cpu_op_lsra()$/;"	f
+cpu_op_nop	emu6502/cpu.c	/^void cpu_op_nop() {}$/;"	f
+cpu_op_ora	emu6502/cpu.c	/^void cpu_op_ora() { cpu_update_zn_flags(cpu.A |= op_value); }$/;"	f
+cpu_op_pha	emu6502/cpu.c	/^void cpu_op_pha() { cpu_stack_pushb(cpu.A); }$/;"	f
+cpu_op_php	emu6502/cpu.c	/^void cpu_op_php() { cpu_stack_pushb(cpu.P | 0x30); }$/;"	f
+cpu_op_pla	emu6502/cpu.c	/^void cpu_op_pla() { cpu.A = cpu_stack_popb(); cpu_update_zn_flags(cpu.A); }$/;"	f
+cpu_op_plp	emu6502/cpu.c	/^void cpu_op_plp() { cpu.P = (cpu_stack_popb() & 0xEF) | 0x20; }$/;"	f
+cpu_op_rla	emu6502/cpu.c	/^void cpu_op_rla() { cpu_op_rol(); cpu_op_and(); }$/;"	f
+cpu_op_rol	emu6502/cpu.c	/^void cpu_op_rol()$/;"	f
+cpu_op_rola	emu6502/cpu.c	/^void cpu_op_rola()$/;"	f
+cpu_op_ror	emu6502/cpu.c	/^void cpu_op_ror()$/;"	f
+cpu_op_rora	emu6502/cpu.c	/^void cpu_op_rora()$/;"	f
+cpu_op_rra	emu6502/cpu.c	/^void cpu_op_rra() { cpu_op_ror(); cpu_op_adc(); }$/;"	f
+cpu_op_rti	emu6502/cpu.c	/^void cpu_op_rti() { cpu.P = cpu_stack_popb() | unused_flag; cpu.PC = cpu_stack_popw(); }$/;"	f
+cpu_op_rts	emu6502/cpu.c	/^void cpu_op_rts() { cpu.PC = cpu_stack_popw() + 1; }$/;"	f
+cpu_op_sbc	emu6502/cpu.c	/^void cpu_op_sbc()$/;"	f
+cpu_op_sec	emu6502/cpu.c	/^void cpu_op_sec() { cpu_set_flag(carry_bp);       }$/;"	f
+cpu_op_sed	emu6502/cpu.c	/^void cpu_op_sed() { cpu_set_flag(decimal_bp);     }$/;"	f
+cpu_op_sei	emu6502/cpu.c	/^void cpu_op_sei() { cpu_set_flag(interrupt_bp);   }$/;"	f
+cpu_op_sta	emu6502/cpu.c	/^void cpu_op_sta() { memory_writeb(op_address, cpu.A); }$/;"	f
+cpu_op_stx	emu6502/cpu.c	/^void cpu_op_stx() { memory_writeb(op_address, cpu.X); }$/;"	f
+cpu_op_sty	emu6502/cpu.c	/^void cpu_op_sty() { memory_writeb(op_address, cpu.Y); }$/;"	f
+cpu_op_tax	emu6502/cpu.c	/^void cpu_op_tax() { cpu_update_zn_flags(cpu.X = cpu.A);  }$/;"	f
+cpu_op_tay	emu6502/cpu.c	/^void cpu_op_tay() { cpu_update_zn_flags(cpu.Y = cpu.A);  }$/;"	f
+cpu_op_tsx	emu6502/cpu.c	/^void cpu_op_tsx() { cpu_update_zn_flags(cpu.X = cpu.SP); }$/;"	f
+cpu_op_txa	emu6502/cpu.c	/^void cpu_op_txa() { cpu_update_zn_flags(cpu.A = cpu.X);  }$/;"	f
+cpu_op_txs	emu6502/cpu.c	/^void cpu_op_txs() { cpu.SP = cpu.X; }$/;"	f
+cpu_op_tya	emu6502/cpu.c	/^void cpu_op_tya() { cpu_update_zn_flags(cpu.A = cpu.Y);  }$/;"	f
+cpu_ram_read	emu6502/cpu.c	/^inline byte cpu_ram_read(word address)$/;"	f
+cpu_ram_write	emu6502/cpu.c	/^void cpu_ram_write(word address, byte data)$/;"	f
+cpu_reset	emu6502/cpu.c	/^void cpu_reset()$/;"	f
+cpu_reset_interrupt_address	emu6502/cpu.c	/^inline word cpu_reset_interrupt_address() { return memory_readw(0xFFFC); }$/;"	f
+cpu_run	emu6502/cpu.c	/^void cpu_run(long cycles)$/;"	f
+cpu_set_flag	emu6502/cpu.c	44;"	d	file:
+cpu_stack_popb	emu6502/cpu.c	/^byte cpu_stack_popb()           { return memory_readb(0x100 + ++cpu.SP);       }$/;"	f
+cpu_stack_popw	emu6502/cpu.c	/^word cpu_stack_popw()           { cpu.SP += 2; return memory_readw(0xFF + cpu.SP); }$/;"	f
+cpu_stack_pushb	emu6502/cpu.c	/^void cpu_stack_pushb(byte data) { memory_writeb(0x100 + cpu.SP--, data);       }$/;"	f
+cpu_stack_pushw	emu6502/cpu.c	/^void cpu_stack_pushw(word data) { memory_writew(0xFF + cpu.SP, data); cpu.SP -= 2; }$/;"	f
+cpu_unset_flag	emu6502/cpu.c	45;"	d	file:
+cpu_update_zn_flags	emu6502/cpu.c	47;"	d	file:
+display_buffer	device/video.c	/^display_buffer(void) {$/;"	f
+draw_character	device/video.c	/^draw_character(char ch, int x, int y, int color) {$/;"	f	file:
+draw_string	device/video.c	/^draw_string(const char *str, int x, int y, int color) {$/;"	f
+fce_event_queue	fce/hal.c	/^ALLEGRO_EVENT_QUEUE *fce_event_queue;$/;"	v
+fce_init	fce/fce.c	/^void fce_init()$/;"	f
+fce_load_rom	fce/fce.c	/^int fce_load_rom(char *rom)$/;"	f
+fce_rom_header	fce/fce.c	/^static ines_header fce_rom_header;$/;"	v	file:
+fce_run	fce/fce.c	/^void fce_run()$/;"	f
+fce_timer	fce/hal.c	/^ALLEGRO_TIMER *fce_timer = NULL;$/;"	v
+fce_update_screen	fce/fce.c	/^void fce_update_screen()$/;"	f
+fg	fce/pixbuf.c	/^PixelBuf bg, bbg, fg;$/;"	v
+font8x8_basic	device/font.c	/^char font8x8_basic[128][8] = {$/;"	v
+game_init	main.c	/^game_init(void) {$/;"	f
+handle_keyboard	main.c	/^handle_keyboard(int code) {$/;"	f
+handle_timer	main.c	/^handle_timer(void) { \/\/ 时钟中断处理函数$/;"	f
+idt	irq/idt.c	/^struct GateDescriptor idt[NR_IRQ];$/;"	v	typeref:struct:GateDescriptor
+ines_header	fce/fce.c	/^} ines_header;$/;"	t	typeref:struct:__anon1	file:
+init_idt	irq/idt.c	/^void init_idt() {$/;"	f
+init_intr	irq/i8259.c	/^init_intr(void) {$/;"	f
+init_timer	device/timer.c	/^init_timer(void) {$/;"	f
+irq_handle	irq/irq_handle.c	/^irq_handle(struct TrapFrame *tf) {$/;"	f
+itoa	lib/string.c	/^char *itoa(int a) {$/;"	f
+last_key	main.c	/^static int last_key = 0;$/;"	v	file:
+litenes	main.c	/^void litenes(void){$/;"	f
+litenes_main	litenes.c	/^void litenes_main(void)$/;"	f
+live	main.c	/^static volatile int timers = 0, live = 0;$/;"	v	file:
+memcpy	lib/string.c	/^memcpy(void *dst, const void *src, unsigned int count) {$/;"	f
+memory	emu6502/mmc.c	/^byte memory[0x10000];$/;"	v
+memory_readb	emu6502/memory.c	/^byte memory_readb(word address)$/;"	f
+memory_readw	emu6502/memory.c	/^word memory_readw(word address)$/;"	f
+memory_writeb	emu6502/memory.c	/^void memory_writeb(word address, byte data)$/;"	f
+memory_writew	emu6502/memory.c	/^void memory_writew(word address, word data)$/;"	f
+memset	lib/string.c	/^memset(void *dst, int val, unsigned int count) {$/;"	f
+mmc_append_chr_rom_page	emu6502/mmc.c	/^inline void mmc_append_chr_rom_page(byte *source)$/;"	f
+mmc_chr_pages	emu6502/mmc.c	/^byte mmc_chr_pages[MMC_MAX_PAGE_COUNT][0x2000];$/;"	v
+mmc_chr_pages_number	emu6502/mmc.c	/^int mmc_prg_pages_number, mmc_chr_pages_number;$/;"	v
+mmc_copy	emu6502/mmc.c	/^inline void mmc_copy(word address, byte *source, int length)$/;"	f
+mmc_prg_pages	emu6502/mmc.c	/^byte mmc_prg_pages[MMC_MAX_PAGE_COUNT][0x4000];$/;"	v
+mmc_prg_pages_number	emu6502/mmc.c	/^int mmc_prg_pages_number, mmc_chr_pages_number;$/;"	v
+mmc_read	emu6502/mmc.c	/^inline byte mmc_read(word address)$/;"	f
+mmc_write	emu6502/mmc.c	/^inline void mmc_write(word address, byte data)$/;"	f
+nes_draw_pixel	fce/hal.c	/^void nes_draw_pixel(Pixel *p)$/;"	f
+nes_flip_display	fce/hal.c	/^void nes_flip_display()$/;"	f
+nes_hal_init	fce/hal.c	/^void nes_hal_init()$/;"	f
+nes_key_state	fce/hal.c	/^int nes_key_state(int b)$/;"	f
+nes_set_bg_color	fce/hal.c	/^void nes_set_bg_color(int r, int g, int b, int c)$/;"	f
+p	emu6502/psg.c	/^static int p = 10;$/;"	v	file:
+play	main.c	/^play(void) { \/\/主循环$/;"	f
+ppu_2007_first_read	emu6502/ppu.c	/^bool ppu_2007_first_read;$/;"	v
+ppu_addr_latch	emu6502/ppu.c	/^byte ppu_addr_latch;$/;"	v
+ppu_background_pattern_table_address	emu6502/ppu.c	/^inline word ppu_background_pattern_table_address()                  { return common_bit_set(ppu.PPUCTRL, 4) ? 0x1000 : 0x0000; }$/;"	f
+ppu_base_nametable_address	emu6502/ppu.c	/^inline word ppu_base_nametable_address()                            { return ppu_base_nametable_addresses[ppu.PPUCTRL & 0x3];  }$/;"	f
+ppu_copy	emu6502/ppu.c	/^inline void ppu_copy(word address, byte *source, int length)$/;"	f
+ppu_cycle	emu6502/ppu.c	/^void ppu_cycle()$/;"	f
+ppu_draw_background_scanline	emu6502/ppu.c	/^void ppu_draw_background_scanline(bool mirror)$/;"	f
+ppu_draw_sprite_scanline	emu6502/ppu.c	/^void ppu_draw_sprite_scanline()$/;"	f
+ppu_generates_nmi	emu6502/ppu.c	/^inline bool ppu_generates_nmi()                                     { return common_bit_set(ppu.PPUCTRL, 7);                   }$/;"	f
+ppu_get_real_ram_address	emu6502/ppu.c	/^inline word ppu_get_real_ram_address(word address)$/;"	f
+ppu_in_vblank	emu6502/ppu.c	/^inline bool ppu_in_vblank()                                         { return common_bit_set(ppu.PPUSTATUS, 7); }$/;"	f
+ppu_init	emu6502/ppu.c	/^void ppu_init()$/;"	f
+ppu_intensifies_blues	emu6502/ppu.c	/^inline bool ppu_intensifies_blues()                                 { return common_bit_set(ppu.PPUMASK, 7); }$/;"	f
+ppu_intensifies_greens	emu6502/ppu.c	/^inline bool ppu_intensifies_greens()                                { return common_bit_set(ppu.PPUMASK, 6); }$/;"	f
+ppu_intensifies_reds	emu6502/ppu.c	/^inline bool ppu_intensifies_reds()                                  { return common_bit_set(ppu.PPUMASK, 5); }$/;"	f
+ppu_io_read	emu6502/ppu.c	/^inline byte ppu_io_read(word address)$/;"	f
+ppu_io_write	emu6502/ppu.c	/^inline void ppu_io_write(word address, byte data)$/;"	f
+ppu_ram_read	emu6502/ppu.c	/^inline byte ppu_ram_read(word address)$/;"	f
+ppu_ram_write	emu6502/ppu.c	/^inline void ppu_ram_write(word address, byte data)$/;"	f
+ppu_renders_grayscale	emu6502/ppu.c	/^inline bool ppu_renders_grayscale()                                 { return common_bit_set(ppu.PPUMASK, 0); }$/;"	f
+ppu_run	emu6502/ppu.c	/^void ppu_run(int cycles)$/;"	f
+ppu_set_background_color	emu6502/ppu.c	/^void ppu_set_background_color(byte color)$/;"	f
+ppu_set_in_vblank	emu6502/ppu.c	/^inline void ppu_set_in_vblank(bool yesno)                           { common_modify_bitb(&ppu.PPUSTATUS, 7, yesno); }$/;"	f
+ppu_set_intensifies_blues	emu6502/ppu.c	/^inline void ppu_set_intensifies_blues(bool yesno)                   { common_modify_bitb(&ppu.PPUMASK, 7, yesno); }$/;"	f
+ppu_set_intensifies_greens	emu6502/ppu.c	/^inline void ppu_set_intensifies_greens(bool yesno)                  { common_modify_bitb(&ppu.PPUMASK, 6, yesno); }$/;"	f
+ppu_set_intensifies_reds	emu6502/ppu.c	/^inline void ppu_set_intensifies_reds(bool yesno)                    { common_modify_bitb(&ppu.PPUMASK, 5, yesno); }$/;"	f
+ppu_set_mirroring	emu6502/ppu.c	/^void ppu_set_mirroring(byte mirroring)$/;"	f
+ppu_set_renders_grayscale	emu6502/ppu.c	/^inline void ppu_set_renders_grayscale(bool yesno)                   { common_modify_bitb(&ppu.PPUMASK, 0, yesno); }$/;"	f
+ppu_set_shows_background	emu6502/ppu.c	/^inline void ppu_set_shows_background(bool yesno)                    { common_modify_bitb(&ppu.PPUMASK, 3, yesno); }$/;"	f
+ppu_set_shows_background_in_leftmost_8px	emu6502/ppu.c	/^inline void ppu_set_shows_background_in_leftmost_8px(bool yesno)    { common_modify_bitb(&ppu.PPUMASK, 1, yesno); }$/;"	f
+ppu_set_shows_sprites	emu6502/ppu.c	/^inline void ppu_set_shows_sprites(bool yesno)                       { common_modify_bitb(&ppu.PPUMASK, 4, yesno); }$/;"	f
+ppu_set_shows_sprites_in_leftmost_8px	emu6502/ppu.c	/^inline void ppu_set_shows_sprites_in_leftmost_8px(bool yesno)       { common_modify_bitb(&ppu.PPUMASK, 2, yesno); }$/;"	f
+ppu_set_sprite_0_hit	emu6502/ppu.c	/^inline void ppu_set_sprite_0_hit(bool yesno)                        { common_modify_bitb(&ppu.PPUSTATUS, 6, yesno); }$/;"	f
+ppu_set_sprite_overflow	emu6502/ppu.c	/^inline void ppu_set_sprite_overflow(bool yesno)                     { common_modify_bitb(&ppu.PPUSTATUS, 5, yesno); }$/;"	f
+ppu_shows_background	emu6502/ppu.c	/^inline bool ppu_shows_background()                                  { return common_bit_set(ppu.PPUMASK, 3); }$/;"	f
+ppu_shows_background_in_leftmost_8px	emu6502/ppu.c	/^inline bool ppu_shows_background_in_leftmost_8px()                  { return common_bit_set(ppu.PPUMASK, 1); }$/;"	f
+ppu_shows_sprites	emu6502/ppu.c	/^inline bool ppu_shows_sprites()                                     { return common_bit_set(ppu.PPUMASK, 4); }$/;"	f
+ppu_shows_sprites_in_leftmost_8px	emu6502/ppu.c	/^inline bool ppu_shows_sprites_in_leftmost_8px()                     { return common_bit_set(ppu.PPUMASK, 2); }$/;"	f
+ppu_sprite_0_hit	emu6502/ppu.c	/^inline bool ppu_sprite_0_hit()                                      { return common_bit_set(ppu.PPUSTATUS, 6); }$/;"	f
+ppu_sprite_height	emu6502/ppu.c	/^inline byte ppu_sprite_height()                                     { return common_bit_set(ppu.PPUCTRL, 5) ? 16 : 8;          }$/;"	f
+ppu_sprite_overflow	emu6502/ppu.c	/^inline bool ppu_sprite_overflow()                                   { return common_bit_set(ppu.PPUSTATUS, 5); }$/;"	f
+ppu_sprite_palette	emu6502/ppu.c	/^byte ppu_sprite_palette[4][4];$/;"	v
+ppu_sprite_pattern_table_address	emu6502/ppu.c	/^inline word ppu_sprite_pattern_table_address()                      { return common_bit_set(ppu.PPUCTRL, 3) ? 0x1000 : 0x0000; }$/;"	f
+ppu_sprram_write	emu6502/ppu.c	/^void ppu_sprram_write(byte data)$/;"	f
+ppu_vram_address_increment	emu6502/ppu.c	/^inline byte ppu_vram_address_increment()                            { return common_bit_set(ppu.PPUCTRL, 2) ? 32 : 1;          }$/;"	f
+prepare_buffer	device/video.c	/^prepare_buffer(void) {$/;"	f
+prev_write	emu6502/psg.c	/^static byte prev_write;$/;"	v	file:
+prg_block_count	fce/fce.c	/^    byte prg_block_count;$/;"	m	struct:__anon1	file:
+psg_io_read	emu6502/psg.c	/^inline byte psg_io_read(word address)$/;"	f
+psg_io_write	emu6502/psg.c	/^inline void psg_io_write(word address, byte data)$/;"	f
+reserved	fce/fce.c	/^    byte reserved[8];$/;"	m	struct:__anon1	file:
+rom	litenes.c	/^static char rom[1048576];$/;"	v	file:
+rom_type	fce/fce.c	/^    word rom_type;$/;"	m	struct:__anon1	file:
+romread	fce/fce.c	/^romread(char *rom, void *buf, int size)$/;"	f
+set_intr	irq/idt.c	/^set_intr(struct GateDescriptor *ptr, uint32_t selector, uint32_t offset, uint32_t dpl) {$/;"	f	file:
+set_trap	irq/idt.c	/^set_trap(struct GateDescriptor *ptr, uint32_t selector, uint32_t offset, uint32_t dpl) {$/;"	f	file:
+signature	fce/fce.c	/^    char signature[4];$/;"	m	struct:__anon1	file:
+sin	main.c	/^float sin(float x) {$/;"	f
+timers	main.c	/^static volatile int timers = 0, live = 0;$/;"	v	file:
+vbuf	device/video.c	/^static uint8_t vbuf[SCR_SIZE];$/;"	v	file:
+vmem	device/video.c	/^uint8_t *vmem = vbuf;$/;"	v
+vref	device/video.c	/^static uint8_t vref[SCR_SIZE];$/;"	v	file:
+vtx	fce/hal.c	/^static ALLEGRO_VERTEX vtx[1000000];$/;"	v	file:
+vtx_sz	fce/hal.c	/^int vtx_sz = 0;$/;"	v
+wait_for_frame	fce/hal.c	/^void wait_for_frame()$/;"	f

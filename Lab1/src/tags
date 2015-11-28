@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLUE_SCREEN_TEXT	lib/abort.c	23;"	d	file:
+FREQ_8253	device/timer.c	7;"	d	file:
+INTERRUPT_GATE_32	irq/idt.c	3;"	d	file:
+IRQ_SLAVE	irq/i8259.c	5;"	d	file:
+PORT_PIC_MASTER	irq/i8259.c	3;"	d	file:
+PORT_PIC_SLAVE	irq/i8259.c	4;"	d	file:
+TIMER_PORT	device/timer.c	6;"	d	file:
+TRAP_GATE_32	irq/idt.c	4;"	d	file:
+abort	lib/abort.c	/^abort(const char *fname, int line) {$/;"	f
+append	lib/abort.c	/^append(char **p, const char *str) {$/;"	f	file:
+asm_do_irq	irq/do_irq.S	/^asm_do_irq:$/;"	l
+display_message	lib/abort.c	/^display_message(const char *file, int line) {$/;"	f	file:
+entry	main.c	/^entry(void) {$/;"	f
+idt	irq/idt.c	/^struct GateDescriptor idt[NR_IRQ];$/;"	v	typeref:struct:GateDescriptor
+init_idt	irq/idt.c	/^void init_idt() {$/;"	f
+init_intr	irq/i8259.c	/^init_intr(void) {$/;"	f
+init_serial	device/serial.c	/^init_serial(void) {$/;"	f
+init_timer	device/timer.c	/^init_timer(void) {$/;"	f
+irq_handle	irq/irq_handle.c	/^irq_handle(struct TrapFrame *tf) {$/;"	f
+itoa	lib/abort.c	/^itoa(int a) {$/;"	f	file:
+putchar	device/serial.c	/^putchar(char ch) {$/;"	f
+serial_idle	device/serial.c	/^serial_idle(void) {$/;"	f	file:
+set_intr	irq/idt.c	/^set_intr(struct GateDescriptor *ptr, uint32_t selector, uint32_t offset, uint32_t dpl) {$/;"	f	file:
+set_trap	irq/idt.c	/^set_trap(struct GateDescriptor *ptr, uint32_t selector, uint32_t offset, uint32_t dpl) {$/;"	f	file:

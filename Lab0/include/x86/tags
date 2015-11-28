@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DPL_KERNEL	memory.h	4;"	d
+DPL_USER	memory.h	5;"	d
+GateDescriptor	memory.h	/^struct GateDescriptor {$/;"	s
+NR_IRQ	cpu.h	34;"	d
+NR_SEGMENTS	memory.h	7;"	d
+SEG_KERNEL_CODE	memory.h	8;"	d
+SEG_KERNEL_DATA	memory.h	9;"	d
+TrapFrame	memory.h	/^struct TrapFrame {$/;"	s
+__IRQ_H__	irq.h	2;"	d
+__X86_CPU_H__	cpu.h	2;"	d
+__X86_IO_H__	io.h	2;"	d
+__X86_MEMORY_H__	memory.h	2;"	d
+disable_interrupt	cpu.h	/^disable_interrupt(void) {$/;"	f
+eax	memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ebp	memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ebx	memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ecx	memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+edi	memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+edx	memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+enable_interrupt	cpu.h	/^enable_interrupt(void) {$/;"	f
+esi	memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+in_byte	io.h	/^in_byte(uint16_t port) {$/;"	f
+irq	memory.h	/^	int32_t irq;$/;"	m	struct:TrapFrame
+offset_15_0	memory.h	/^	uint32_t offset_15_0      : 16;$/;"	m	struct:GateDescriptor
+offset_31_16	memory.h	/^	uint32_t offset_31_16     : 16;$/;"	m	struct:GateDescriptor
+out_byte	io.h	/^out_byte(uint16_t port, int8_t data) {$/;"	f
+pad0	memory.h	/^	uint32_t pad0             : 8;$/;"	m	struct:GateDescriptor
+present	memory.h	/^	uint32_t present          : 1;$/;"	m	struct:GateDescriptor
+privilege_level	memory.h	/^	uint32_t privilege_level  : 2;$/;"	m	struct:GateDescriptor
+save_idt	cpu.h	/^save_idt(void *addr, uint32_t size) {$/;"	f
+segment	memory.h	/^	uint32_t segment          : 16;$/;"	m	struct:GateDescriptor
+system	memory.h	/^	uint32_t system           : 1;$/;"	m	struct:GateDescriptor
+type	memory.h	/^	uint32_t type             : 4;$/;"	m	struct:GateDescriptor
+wait_for_interrupt	cpu.h	/^wait_for_interrupt() {$/;"	f
+xxx	memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame

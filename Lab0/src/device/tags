@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FREQ_8253	timer.c	7;"	d	file:
+TIMER_PORT	timer.c	6;"	d	file:
+display_buffer	video.c	/^display_buffer(void) {$/;"	f
+draw_character	video.c	/^draw_character(char ch, int x, int y, int color) {$/;"	f	file:
+draw_string	video.c	/^draw_string(const char *str, int x, int y, int color) {$/;"	f
+font8x8_basic	font.c	/^char font8x8_basic[128][8] = {$/;"	v
+init_timer	timer.c	/^init_timer(void) {$/;"	f
+prepare_buffer	video.c	/^prepare_buffer(void) {$/;"	f
+vbuf	video.c	/^static uint8_t vbuf[SCR_SIZE];$/;"	v	file:
+vmem	video.c	/^uint8_t *vmem = vbuf;$/;"	v
+vref	video.c	/^static uint8_t vref[SCR_SIZE];$/;"	v	file:

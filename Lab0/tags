@@ -1,0 +1,460 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	include/nes/cpu-internal.h	/^    byte A, X, Y; \/\/ Registers$/;"	m	struct:__anon4
+ASFLAGS	Makefile	/^ASFLAGS = -m32 -MD$/;"	m
+BLUE_SCREEN_TEXT	src/lib/abort.c	13;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFILES	Makefile	/^CFILES = $(shell find src\/ -name "*.c")$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -m32 -march=i386 -static -MD -std=gnu89 -ggdb \\$/;"	m
+COMMON_H	include/nes/common.h	6;"	d
+CPU_H	include/nes/cpu.h	4;"	d
+CPU_INTERNAL_H	include/nes/cpu-internal.h	2;"	d
+CPU_OP_BIS	src/emu6502/cpu.c	271;"	d	file:
+CPU_OP_EIS	src/emu6502/cpu.c	287;"	d	file:
+CPU_OP_NII	src/emu6502/cpu.c	279;"	d	file:
+CPU_RAM	include/nes/cpu-internal.h	/^byte CPU_RAM[0x8000];$/;"	v
+CPU_STATE	include/nes/cpu-internal.h	/^} CPU_STATE;$/;"	t	typeref:struct:__anon4
+DPL_KERNEL	include/x86/memory.h	4;"	d
+DPL_USER	include/x86/memory.h	5;"	d
+ELFHeader	boot/boot.h	/^struct ELFHeader {$/;"	s
+FALSE	include/common/const.h	5;"	d
+FCE_H	include/nes/fce.h	2;"	d
+FPS	include/nes/nes.h	1;"	d
+FREQ_8253	src/device/timer.c	7;"	d	file:
+GDT_ENTRY	boot/asm.h	2;"	d
+GITFLAGS	Makefile	/^GITFLAGS = -q --author='tracer <tracer@njuoslab.org>' --no-verify --allow-empty$/;"	m
+GateDescriptor	include/x86/memory.h	/^struct GateDescriptor {$/;"	s
+HZ	include/device/timer.h	4;"	d
+INTERRUPT_GATE_32	src/irq/idt.c	3;"	d	file:
+IRQ_SLAVE	src/irq/i8259.c	5;"	d	file:
+LD	Makefile	/^LD = ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -melf_i386$/;"	m
+MEM_H	include/nes/memory.h	2;"	d
+MMC_MAX_PAGE_COUNT	src/emu6502/mmc.c	5;"	d	file:
+M_common	src/lib/common.c	7;"	d	file:
+NR_IRQ	include/x86/cpu.h	34;"	d
+NR_SEGMENTS	include/x86/memory.h	7;"	d
+NULL	include/common/const.h	7;"	d
+OAMADDR	include/nes/ppu-internal.h	/^    byte OAMADDR;   \/\/ $2003 write only$/;"	m	struct:__anon5
+OAMDATA	include/nes/ppu-internal.h	/^    byte OAMDATA;   \/\/ $2004$/;"	m	struct:__anon5
+OBJS	Makefile	/^OBJS = $(CFILES:.c=.o) $(SFILES:.S=.o)$/;"	m
+P	include/nes/cpu-internal.h	/^    byte P; \/\/ Flag Register$/;"	m	struct:__anon4
+PC	include/nes/cpu-internal.h	/^    word PC; \/\/ Program Counter,$/;"	m	struct:__anon4
+PI	src/main.c	20;"	d	file:
+PORT_PIC_MASTER	src/irq/i8259.c	3;"	d	file:
+PORT_PIC_SLAVE	src/irq/i8259.c	4;"	d	file:
+PPUADDR	include/nes/ppu-internal.h	/^    word PPUADDR;   \/\/ $2006 write only x2$/;"	m	struct:__anon5
+PPUCTRL	include/nes/ppu-internal.h	/^    byte PPUCTRL;   \/\/ $2000 write only$/;"	m	struct:__anon5
+PPUDATA	include/nes/ppu-internal.h	/^    word PPUDATA;   \/\/ $2007$/;"	m	struct:__anon5
+PPUMASK	include/nes/ppu-internal.h	/^    byte PPUMASK;   \/\/ $2001 write only$/;"	m	struct:__anon5
+PPUSCROLL	include/nes/ppu-internal.h	/^	word PPUSCROLL;$/;"	m	struct:__anon5
+PPUSCROLL_X	include/nes/ppu-internal.h	/^    byte PPUSCROLL_X, PPUSCROLL_Y; \/\/ $2005 write only x2$/;"	m	struct:__anon5
+PPUSCROLL_Y	include/nes/ppu-internal.h	/^    byte PPUSCROLL_X, PPUSCROLL_Y; \/\/ $2005 write only x2$/;"	m	struct:__anon5
+PPUSTATUS	include/nes/ppu-internal.h	/^    byte PPUSTATUS; \/\/ $2002 read only$/;"	m	struct:__anon5
+PPU_H	include/nes/ppu.h	4;"	d
+PPU_INTERNAL_H	include/nes/ppu-internal.h	4;"	d
+PPU_RAM	include/nes/ppu.h	/^byte PPU_RAM[0x4000];$/;"	v
+PPU_SPRRAM	include/nes/ppu.h	/^byte PPU_SPRRAM[0x100];$/;"	v
+PPU_STATE	include/nes/ppu-internal.h	/^} PPU_STATE;$/;"	t	typeref:struct:__anon5
+PSG_H	include/nes/psg.h	7;"	d
+Pixel	include/nes/hal.h	/^struct Pixel {$/;"	s
+Pixel	include/nes/hal.h	/^typedef struct Pixel Pixel;$/;"	t	typeref:struct:Pixel
+PixelBuf	include/nes/hal.h	/^struct PixelBuf {$/;"	s
+PixelBuf	include/nes/hal.h	/^typedef struct PixelBuf PixelBuf;$/;"	t	typeref:struct:PixelBuf
+ProgramHeader	boot/boot.h	/^struct ProgramHeader {$/;"	s
+QEMU	Makefile	/^QEMU = qemu-system-i386$/;"	m
+SCREEN_HEIGHT	include/nes/nes.h	3;"	d
+SCREEN_WIDTH	include/nes/nes.h	2;"	d
+SCR_HEIGHT	include/device/video.h	7;"	d
+SCR_SIZE	include/device/video.h	8;"	d
+SCR_WIDTH	include/device/video.h	6;"	d
+SECTSIZE	boot/main.c	11;"	d	file:
+SEG_ASM	boot/asm.h	9;"	d
+SEG_KERNEL_CODE	include/x86/memory.h	8;"	d
+SEG_KERNEL_DATA	include/x86/memory.h	9;"	d
+SEG_NULLASM	boot/asm.h	5;"	d
+SFILES	Makefile	/^SFILES = $(shell find src\/ -name "*.S")$/;"	m
+SP	include/nes/cpu-internal.h	/^    byte SP; \/\/ Stack Pointer,$/;"	m	struct:__anon4
+TIMER_PORT	src/device/timer.c	6;"	d	file:
+TRAP_GATE_32	src/irq/idt.c	4;"	d	file:
+TRUE	include/common/const.h	4;"	d
+TrapFrame	include/x86/memory.h	/^struct TrapFrame {$/;"	s
+VMEM_ADDR	include/device/video.h	9;"	d
+X	include/nes/cpu-internal.h	/^    byte A, X, Y; \/\/ Registers$/;"	m	struct:__anon4
+Y	include/nes/cpu-internal.h	/^    byte A, X, Y; \/\/ Registers$/;"	m	struct:__anon4
+__ASSERT_H__	include/common/assert.h	2;"	d
+__COMMON_H__	include/common.h	2;"	d
+__CONST_H__	include/common/const.h	2;"	d
+__DEVICE_H__	include/device.h	2;"	d
+__FONT_H__	include/device/font.h	2;"	d
+__HAL_H__	include/nes/hal.h	2;"	d
+__IRQ_H__	include/x86/irq.h	2;"	d
+__STRING_H__	include/common/string.h	2;"	d
+__TIMER_H__	include/device/timer.h	2;"	d
+__TYPES_H__	include/common/types.h	2;"	d
+__VIDEO_H__	include/device/video.h	2;"	d
+__X86_CPU_H__	include/x86/cpu.h	2;"	d
+__X86_IO_H__	include/x86/io.h	2;"	d
+__X86_MEMORY_H__	include/x86/memory.h	2;"	d
+____FE____	src/emu6502/cpu.c	/^void ____FE____() { \/* Instruction for future Extension *\/ }$/;"	f
+__pal	include/nes/fce.h	/^typedef struct __pal {$/;"	s
+__x86_H__	include/x86.h	2;"	d
+abort	src/lib/abort.c	/^abort(const char *fname, int line) {$/;"	f
+addr_received_high_byte	include/nes/ppu-internal.h	/^    bool addr_received_high_byte;$/;"	m	struct:__anon5
+align	boot/boot.h	/^	unsigned int align;$/;"	m	struct:ProgramHeader
+append	src/lib/abort.c	/^append(char **p, const char *str) {$/;"	f	file:
+asm_do_irq	src/irq/do_irq.S	/^asm_do_irq:$/;"	l
+assert	include/common/assert.h	7;"	d
+b	include/nes/fce.h	/^	int b;$/;"	m	struct:__pal
+b	include/nes/hal.h	/^	int r, g, b, c;$/;"	m	struct:Pixel
+bbg	src/fce/pixbuf.c	/^PixelBuf bg, bbg, fg;$/;"	v
+bg	src/fce/pixbuf.c	/^PixelBuf bg, bbg, fg;$/;"	v
+blue_screen	src/lib/abort.c	/^blue_screen(const char *file, int line) {$/;"	f	file:
+bootmain	boot/main.c	/^bootmain(void) {$/;"	f
+break_bp	include/nes/cpu-internal.h	/^    break_bp      = 4,$/;"	e	enum:__anon3
+break_flag	include/nes/cpu-internal.h	/^    break_flag     = 0x10,$/;"	e	enum:__anon2
+buf	include/nes/hal.h	/^	Pixel buf[264 * 264];$/;"	m	struct:PixelBuf
+byte	include/nes/common.h	/^typedef uint8_t byte;$/;"	t
+c	include/nes/hal.h	/^	int r, g, b, c;$/;"	m	struct:Pixel
+carry_bp	include/nes/cpu-internal.h	/^    carry_bp      = 0,$/;"	e	enum:__anon3
+carry_flag	include/nes/cpu-internal.h	/^    carry_flag     = 0x01,$/;"	e	enum:__anon2
+chr_block_count	src/fce/fce.c	/^    byte chr_block_count;$/;"	m	struct:__anon1	file:
+common_bit_set	src/lib/common.c	/^bool common_bit_set(long long value, byte position) { return value & (1L << position); }$/;"	f
+cpu	include/nes/cpu-internal.h	/^CPU_STATE cpu;$/;"	v
+cpu_address_absolute	src/emu6502/cpu-addressing.c	/^void cpu_address_absolute()$/;"	f
+cpu_address_absolute_x	src/emu6502/cpu-addressing.c	/^void cpu_address_absolute_x()$/;"	f
+cpu_address_absolute_y	src/emu6502/cpu-addressing.c	/^void cpu_address_absolute_y()$/;"	f
+cpu_address_immediate	src/emu6502/cpu-addressing.c	/^void cpu_address_immediate()$/;"	f
+cpu_address_implied	src/emu6502/cpu-addressing.c	/^void cpu_address_implied()$/;"	f
+cpu_address_indirect	src/emu6502/cpu-addressing.c	/^void cpu_address_indirect()$/;"	f
+cpu_address_indirect_x	src/emu6502/cpu-addressing.c	/^void cpu_address_indirect_x()$/;"	f
+cpu_address_indirect_y	src/emu6502/cpu-addressing.c	/^void cpu_address_indirect_y()$/;"	f
+cpu_address_relative	src/emu6502/cpu-addressing.c	/^void cpu_address_relative()$/;"	f
+cpu_address_zero_page	src/emu6502/cpu-addressing.c	/^void cpu_address_zero_page()$/;"	f
+cpu_address_zero_page_x	src/emu6502/cpu-addressing.c	/^void cpu_address_zero_page_x()$/;"	f
+cpu_address_zero_page_y	src/emu6502/cpu-addressing.c	/^void cpu_address_zero_page_y()$/;"	f
+cpu_branch	src/emu6502/cpu.c	49;"	d	file:
+cpu_clock	src/emu6502/cpu.c	/^inline unsigned long long cpu_clock()$/;"	f
+cpu_compare	src/emu6502/cpu.c	50;"	d	file:
+cpu_cycles	include/nes/cpu-internal.h	/^unsigned long long cpu_cycles;  \/\/ Total CPU Cycles Since Power Up (wraps)$/;"	v
+cpu_flag_set	src/emu6502/cpu.c	42;"	d	file:
+cpu_init	src/emu6502/cpu.c	/^void cpu_init()$/;"	f
+cpu_interrupt	src/emu6502/cpu.c	/^void cpu_interrupt()$/;"	f
+cpu_irq_interrupt_address	src/emu6502/cpu.c	/^inline word cpu_irq_interrupt_address()   { return memory_readw(0xFFFE); }$/;"	f
+cpu_modify_flag	src/emu6502/cpu.c	43;"	d	file:
+cpu_nmi_interrupt_address	src/emu6502/cpu.c	/^inline word cpu_nmi_interrupt_address()   { return memory_readw(0xFFFA); }$/;"	f
+cpu_op_adc	src/emu6502/cpu.c	/^void cpu_op_adc()$/;"	f
+cpu_op_address_mode	include/nes/cpu-internal.h	/^void (*cpu_op_address_mode[256])();       \/\/ Array of address modes$/;"	v
+cpu_op_and	src/emu6502/cpu.c	/^void cpu_op_and() { cpu_update_zn_flags(cpu.A &= op_value); }$/;"	f
+cpu_op_asl	src/emu6502/cpu.c	/^void cpu_op_asl()$/;"	f
+cpu_op_asla	src/emu6502/cpu.c	/^void cpu_op_asla()$/;"	f
+cpu_op_aso	src/emu6502/cpu.c	/^void cpu_op_aso() { cpu_op_asl(); cpu_op_ora(); }$/;"	f
+cpu_op_axa	src/emu6502/cpu.c	/^void cpu_op_axa() { memory_writeb(op_address, cpu.A & cpu.X & (op_address >> 8)); }$/;"	f
+cpu_op_axs	src/emu6502/cpu.c	/^void cpu_op_axs() { memory_writeb(op_address, cpu.A & cpu.X); }$/;"	f
+cpu_op_bcc	src/emu6502/cpu.c	/^void cpu_op_bcc() { cpu_branch(!cpu_flag_set(carry_bp));    }$/;"	f
+cpu_op_bcs	src/emu6502/cpu.c	/^void cpu_op_bcs() { cpu_branch(cpu_flag_set(carry_bp));     }$/;"	f
+cpu_op_beq	src/emu6502/cpu.c	/^void cpu_op_beq() { cpu_branch(cpu_flag_set(zero_bp));      }$/;"	f
+cpu_op_bit	src/emu6502/cpu.c	/^void cpu_op_bit() { cpu_modify_flag(zero_bp, !(cpu.A & op_value)); cpu.P = (cpu.P & 0x3F) | (0xC0 & op_value); }$/;"	f
+cpu_op_bmi	src/emu6502/cpu.c	/^void cpu_op_bmi() { cpu_branch(cpu_flag_set(negative_bp));  }$/;"	f
+cpu_op_bne	src/emu6502/cpu.c	/^void cpu_op_bne() { cpu_branch(!cpu_flag_set(zero_bp));     }$/;"	f
+cpu_op_bpl	src/emu6502/cpu.c	/^void cpu_op_bpl() { cpu_branch(!cpu_flag_set(negative_bp)); }$/;"	f
+cpu_op_brk	src/emu6502/cpu.c	/^void cpu_op_brk() { cpu_stack_pushw(cpu.PC - 1); cpu_stack_pushb(cpu.P); cpu.P |= unused_flag | break_flag; cpu.PC = cpu_nmi_interrupt_address(); }$/;"	f
+cpu_op_bvc	src/emu6502/cpu.c	/^void cpu_op_bvc() { cpu_branch(!cpu_flag_set(overflow_bp)); }$/;"	f
+cpu_op_bvs	src/emu6502/cpu.c	/^void cpu_op_bvs() { cpu_branch(cpu_flag_set(overflow_bp));  }$/;"	f
+cpu_op_clc	src/emu6502/cpu.c	/^void cpu_op_clc() { cpu_unset_flag(carry_bp);     }$/;"	f
+cpu_op_cld	src/emu6502/cpu.c	/^void cpu_op_cld() { cpu_unset_flag(decimal_bp);   }$/;"	f
+cpu_op_cli	src/emu6502/cpu.c	/^void cpu_op_cli() { cpu_unset_flag(interrupt_bp); }$/;"	f
+cpu_op_clv	src/emu6502/cpu.c	/^void cpu_op_clv() { cpu_unset_flag(overflow_bp);  }$/;"	f
+cpu_op_cmp	src/emu6502/cpu.c	/^void cpu_op_cmp() { cpu_compare(cpu.A); }$/;"	f
+cpu_op_cpx	src/emu6502/cpu.c	/^void cpu_op_cpx() { cpu_compare(cpu.X); }$/;"	f
+cpu_op_cpy	src/emu6502/cpu.c	/^void cpu_op_cpy() { cpu_compare(cpu.Y); }$/;"	f
+cpu_op_cycles	include/nes/cpu-internal.h	/^int cpu_op_cycles[256];                   \/\/ CPU cycles used by instructions$/;"	v
+cpu_op_dcm	src/emu6502/cpu.c	/^void cpu_op_dcm()$/;"	f
+cpu_op_dec	src/emu6502/cpu.c	/^void cpu_op_dec() { byte result = op_value - 1; memory_writeb(op_address, result); cpu_update_zn_flags(result); }$/;"	f
+cpu_op_dex	src/emu6502/cpu.c	/^void cpu_op_dex() { cpu_update_zn_flags(--cpu.X); }$/;"	f
+cpu_op_dey	src/emu6502/cpu.c	/^void cpu_op_dey() { cpu_update_zn_flags(--cpu.Y); }$/;"	f
+cpu_op_eor	src/emu6502/cpu.c	/^void cpu_op_eor() { cpu_update_zn_flags(cpu.A ^= op_value); }$/;"	f
+cpu_op_handler	include/nes/cpu-internal.h	/^void (*cpu_op_handler[256])();            \/\/ Array of instruction function pointers$/;"	v
+cpu_op_in_base_instruction_set	include/nes/cpu-internal.h	/^bool cpu_op_in_base_instruction_set[256]; \/\/ true if instruction is in base 6502 instruction set$/;"	v
+cpu_op_inc	src/emu6502/cpu.c	/^void cpu_op_inc() { byte result = op_value + 1; memory_writeb(op_address, result); cpu_update_zn_flags(result); }$/;"	f
+cpu_op_ins	src/emu6502/cpu.c	/^void cpu_op_ins()$/;"	f
+cpu_op_inx	src/emu6502/cpu.c	/^void cpu_op_inx() { cpu_update_zn_flags(++cpu.X); }$/;"	f
+cpu_op_iny	src/emu6502/cpu.c	/^void cpu_op_iny() { cpu_update_zn_flags(++cpu.Y); }$/;"	f
+cpu_op_jmp	src/emu6502/cpu.c	/^void cpu_op_jmp() { cpu.PC = op_address; }$/;"	f
+cpu_op_jsr	src/emu6502/cpu.c	/^void cpu_op_jsr() { cpu_stack_pushw(cpu.PC - 1); cpu.PC = op_address; }$/;"	f
+cpu_op_lax	src/emu6502/cpu.c	/^void cpu_op_lax() { cpu_update_zn_flags(cpu.A = cpu.X = op_value); }$/;"	f
+cpu_op_lda	src/emu6502/cpu.c	/^void cpu_op_lda() { cpu_update_zn_flags(cpu.A = op_value); }$/;"	f
+cpu_op_ldx	src/emu6502/cpu.c	/^void cpu_op_ldx() { cpu_update_zn_flags(cpu.X = op_value); }$/;"	f
+cpu_op_ldy	src/emu6502/cpu.c	/^void cpu_op_ldy() { cpu_update_zn_flags(cpu.Y = op_value); }$/;"	f
+cpu_op_lse	src/emu6502/cpu.c	/^void cpu_op_lse() { cpu_op_lsr(); cpu_op_eor(); }$/;"	f
+cpu_op_lsr	src/emu6502/cpu.c	/^void cpu_op_lsr()$/;"	f
+cpu_op_lsra	src/emu6502/cpu.c	/^void cpu_op_lsra()$/;"	f
+cpu_op_name	include/nes/cpu-internal.h	/^char *cpu_op_name[256];                   \/\/ Instruction names$/;"	v
+cpu_op_nop	src/emu6502/cpu.c	/^void cpu_op_nop() {}$/;"	f
+cpu_op_ora	src/emu6502/cpu.c	/^void cpu_op_ora() { cpu_update_zn_flags(cpu.A |= op_value); }$/;"	f
+cpu_op_pha	src/emu6502/cpu.c	/^void cpu_op_pha() { cpu_stack_pushb(cpu.A); }$/;"	f
+cpu_op_php	src/emu6502/cpu.c	/^void cpu_op_php() { cpu_stack_pushb(cpu.P | 0x30); }$/;"	f
+cpu_op_pla	src/emu6502/cpu.c	/^void cpu_op_pla() { cpu.A = cpu_stack_popb(); cpu_update_zn_flags(cpu.A); }$/;"	f
+cpu_op_plp	src/emu6502/cpu.c	/^void cpu_op_plp() { cpu.P = (cpu_stack_popb() & 0xEF) | 0x20; }$/;"	f
+cpu_op_rla	src/emu6502/cpu.c	/^void cpu_op_rla() { cpu_op_rol(); cpu_op_and(); }$/;"	f
+cpu_op_rol	src/emu6502/cpu.c	/^void cpu_op_rol()$/;"	f
+cpu_op_rola	src/emu6502/cpu.c	/^void cpu_op_rola()$/;"	f
+cpu_op_ror	src/emu6502/cpu.c	/^void cpu_op_ror()$/;"	f
+cpu_op_rora	src/emu6502/cpu.c	/^void cpu_op_rora()$/;"	f
+cpu_op_rra	src/emu6502/cpu.c	/^void cpu_op_rra() { cpu_op_ror(); cpu_op_adc(); }$/;"	f
+cpu_op_rti	src/emu6502/cpu.c	/^void cpu_op_rti() { cpu.P = cpu_stack_popb() | unused_flag; cpu.PC = cpu_stack_popw(); }$/;"	f
+cpu_op_rts	src/emu6502/cpu.c	/^void cpu_op_rts() { cpu.PC = cpu_stack_popw() + 1; }$/;"	f
+cpu_op_sbc	src/emu6502/cpu.c	/^void cpu_op_sbc()$/;"	f
+cpu_op_sec	src/emu6502/cpu.c	/^void cpu_op_sec() { cpu_set_flag(carry_bp);       }$/;"	f
+cpu_op_sed	src/emu6502/cpu.c	/^void cpu_op_sed() { cpu_set_flag(decimal_bp);     }$/;"	f
+cpu_op_sei	src/emu6502/cpu.c	/^void cpu_op_sei() { cpu_set_flag(interrupt_bp);   }$/;"	f
+cpu_op_sta	src/emu6502/cpu.c	/^void cpu_op_sta() { memory_writeb(op_address, cpu.A); }$/;"	f
+cpu_op_stx	src/emu6502/cpu.c	/^void cpu_op_stx() { memory_writeb(op_address, cpu.X); }$/;"	f
+cpu_op_sty	src/emu6502/cpu.c	/^void cpu_op_sty() { memory_writeb(op_address, cpu.Y); }$/;"	f
+cpu_op_tax	src/emu6502/cpu.c	/^void cpu_op_tax() { cpu_update_zn_flags(cpu.X = cpu.A);  }$/;"	f
+cpu_op_tay	src/emu6502/cpu.c	/^void cpu_op_tay() { cpu_update_zn_flags(cpu.Y = cpu.A);  }$/;"	f
+cpu_op_tsx	src/emu6502/cpu.c	/^void cpu_op_tsx() { cpu_update_zn_flags(cpu.X = cpu.SP); }$/;"	f
+cpu_op_txa	src/emu6502/cpu.c	/^void cpu_op_txa() { cpu_update_zn_flags(cpu.A = cpu.X);  }$/;"	f
+cpu_op_txs	src/emu6502/cpu.c	/^void cpu_op_txs() { cpu.SP = cpu.X; }$/;"	f
+cpu_op_tya	src/emu6502/cpu.c	/^void cpu_op_tya() { cpu_update_zn_flags(cpu.A = cpu.Y);  }$/;"	f
+cpu_p_bp	include/nes/cpu-internal.h	/^} cpu_p_bp;$/;"	t	typeref:enum:__anon3
+cpu_p_flag	include/nes/cpu-internal.h	/^} cpu_p_flag;$/;"	t	typeref:enum:__anon2
+cpu_ram_read	src/emu6502/cpu.c	/^inline byte cpu_ram_read(word address)$/;"	f
+cpu_ram_write	src/emu6502/cpu.c	/^void cpu_ram_write(word address, byte data)$/;"	f
+cpu_reset	src/emu6502/cpu.c	/^void cpu_reset()$/;"	f
+cpu_reset_interrupt_address	src/emu6502/cpu.c	/^inline word cpu_reset_interrupt_address() { return memory_readw(0xFFFC); }$/;"	f
+cpu_run	src/emu6502/cpu.c	/^void cpu_run(long cycles)$/;"	f
+cpu_set_flag	src/emu6502/cpu.c	44;"	d	file:
+cpu_stack_popb	src/emu6502/cpu.c	/^byte cpu_stack_popb()           { return memory_readb(0x100 + ++cpu.SP);       }$/;"	f
+cpu_stack_popw	src/emu6502/cpu.c	/^word cpu_stack_popw()           { cpu.SP += 2; return memory_readw(0xFF + cpu.SP); }$/;"	f
+cpu_stack_pushb	src/emu6502/cpu.c	/^void cpu_stack_pushb(byte data) { memory_writeb(0x100 + cpu.SP--, data);       }$/;"	f
+cpu_stack_pushw	src/emu6502/cpu.c	/^void cpu_stack_pushw(word data) { memory_writew(0xFF + cpu.SP, data); cpu.SP -= 2; }$/;"	f
+cpu_unset_flag	src/emu6502/cpu.c	45;"	d	file:
+cpu_update_zn_flags	src/emu6502/cpu.c	47;"	d	file:
+cpu_zn_flag_table	include/nes/cpu-internal.h	/^static const byte cpu_zn_flag_table[256] =$/;"	v
+decimal_bp	include/nes/cpu-internal.h	/^    decimal_bp    = 3,$/;"	e	enum:__anon3
+decimal_flag	include/nes/cpu-internal.h	/^    decimal_flag   = 0x08,$/;"	e	enum:__anon2
+disable_interrupt	include/x86/cpu.h	/^disable_interrupt(void) {$/;"	f
+display_buffer	src/device/video.c	/^display_buffer(void) {$/;"	f
+draw_character	src/device/video.c	/^draw_character(char ch, int x, int y, int color) {$/;"	f	file:
+draw_pixel	include/device/video.h	/^draw_pixel(int x, int y, int color) {$/;"	f
+draw_string	src/device/video.c	/^draw_string(const char *str, int x, int y, int color) {$/;"	f
+dword	include/nes/common.h	/^typedef uint32_t dword;$/;"	t
+eax	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ebp	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ebx	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ecx	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+edi	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+edx	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+ehsize	boot/boot.h	/^	unsigned short ehsize;$/;"	m	struct:ELFHeader
+elf	boot/boot.h	/^	unsigned char  elf[12];$/;"	m	struct:ELFHeader
+enable_interrupt	include/x86/cpu.h	/^enable_interrupt(void) {$/;"	f
+entry	boot/boot.h	/^	unsigned int   entry;$/;"	m	struct:ELFHeader
+esi	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+fce_event_queue	src/fce/hal.c	/^ALLEGRO_EVENT_QUEUE *fce_event_queue;$/;"	v
+fce_init	src/fce/fce.c	/^void fce_init()$/;"	f
+fce_load_rom	src/fce/fce.c	/^int fce_load_rom(char *rom)$/;"	f
+fce_rom_header	src/fce/fce.c	/^static ines_header fce_rom_header;$/;"	v	file:
+fce_run	src/fce/fce.c	/^void fce_run()$/;"	f
+fce_timer	src/fce/hal.c	/^ALLEGRO_TIMER *fce_timer = NULL;$/;"	v
+fce_update_screen	src/fce/fce.c	/^void fce_update_screen()$/;"	f
+fg	src/fce/pixbuf.c	/^PixelBuf bg, bbg, fg;$/;"	v
+filesz	boot/boot.h	/^	unsigned int filesz;$/;"	m	struct:ProgramHeader
+flags	boot/boot.h	/^	unsigned int   flags;$/;"	m	struct:ELFHeader
+flags	boot/boot.h	/^	unsigned int flags;$/;"	m	struct:ProgramHeader
+font8x8_basic	src/device/font.c	/^char font8x8_basic[128][8] = {$/;"	v
+g	include/nes/fce.h	/^	int g;$/;"	m	struct:__pal
+g	include/nes/hal.h	/^	int r, g, b, c;$/;"	m	struct:Pixel
+game_init	src/main.c	/^game_init(void) {$/;"	f
+gdt	boot/start.S	/^gdt:$/;"	l
+gdtdesc	boot/start.S	/^gdtdesc:                           # GDT描述符$/;"	l
+handle_keyboard	src/main.c	/^handle_keyboard(int code) {$/;"	f
+handle_timer	src/main.c	/^handle_timer(void) { \/\/ 时钟中断处理函数$/;"	f
+idt	src/irq/idt.c	/^struct GateDescriptor idt[NR_IRQ];$/;"	v	typeref:struct:GateDescriptor
+in_byte	boot/boot.h	/^in_byte(short port) {$/;"	f
+in_byte	include/x86/io.h	/^in_byte(uint16_t port) {$/;"	f
+in_long	boot/boot.h	/^in_long(short port) {$/;"	f
+ines_header	src/fce/fce.c	/^} ines_header;$/;"	t	typeref:struct:__anon1	file:
+init_idt	src/irq/idt.c	/^void init_idt() {$/;"	f
+init_intr	src/irq/i8259.c	/^init_intr(void) {$/;"	f
+init_timer	src/device/timer.c	/^init_timer(void) {$/;"	f
+int16_t	include/common/types.h	/^typedef          short int16_t;$/;"	t
+int32_t	include/common/types.h	/^typedef          int   int32_t;$/;"	t
+int8_t	include/common/types.h	/^typedef          char  int8_t;$/;"	t
+interrupt_bp	include/nes/cpu-internal.h	/^    interrupt_bp  = 2,$/;"	e	enum:__anon3
+interrupt_flag	include/nes/cpu-internal.h	/^    interrupt_flag = 0x04,$/;"	e	enum:__anon2
+irq	include/x86/memory.h	/^	int32_t irq;$/;"	m	struct:TrapFrame
+irq_handle	src/irq/irq_handle.c	/^irq_handle(struct TrapFrame *tf) {$/;"	f
+itoa	src/lib/string.c	/^char *itoa(int a) {$/;"	f
+last_key	src/main.c	/^static int last_key = 0;$/;"	v	file:
+len	include/nes/rom.h	/^static int len = 41104;$/;"	v
+litenes	src/main.c	/^void litenes(void){$/;"	f
+litenes_main	src/litenes.c	/^void litenes_main(void)$/;"	f
+live	src/main.c	/^static volatile int timers = 0, live = 0;$/;"	v	file:
+machine	boot/boot.h	/^	unsigned short machine;$/;"	m	struct:ELFHeader
+magic	boot/boot.h	/^	unsigned int   magic;$/;"	m	struct:ELFHeader
+memcpy	src/lib/string.c	/^memcpy(void *dst, const void *src, unsigned int count) {$/;"	f
+memory	src/emu6502/mmc.c	/^byte memory[0x10000];$/;"	v
+memory_readb	src/emu6502/memory.c	/^byte memory_readb(word address)$/;"	f
+memory_readw	src/emu6502/memory.c	/^word memory_readw(word address)$/;"	f
+memory_writeb	src/emu6502/memory.c	/^void memory_writeb(word address, byte data)$/;"	f
+memory_writew	src/emu6502/memory.c	/^void memory_writew(word address, word data)$/;"	f
+memset	src/lib/string.c	/^memset(void *dst, int val, unsigned int count) {$/;"	f
+memsz	boot/boot.h	/^	unsigned int memsz;$/;"	m	struct:ProgramHeader
+mirroring	include/nes/ppu-internal.h	/^    int mirroring, mirroring_xor;$/;"	m	struct:__anon5
+mirroring_xor	include/nes/ppu-internal.h	/^    int mirroring, mirroring_xor;$/;"	m	struct:__anon5
+mmc_append_chr_rom_page	src/emu6502/mmc.c	/^inline void mmc_append_chr_rom_page(byte *source)$/;"	f
+mmc_chr_pages	src/emu6502/mmc.c	/^byte mmc_chr_pages[MMC_MAX_PAGE_COUNT][0x2000];$/;"	v
+mmc_chr_pages_number	src/emu6502/mmc.c	/^int mmc_prg_pages_number, mmc_chr_pages_number;$/;"	v
+mmc_copy	src/emu6502/mmc.c	/^inline void mmc_copy(word address, byte *source, int length)$/;"	f
+mmc_id	include/nes/mmc.h	/^byte mmc_id;$/;"	v
+mmc_prg_pages	src/emu6502/mmc.c	/^byte mmc_prg_pages[MMC_MAX_PAGE_COUNT][0x4000];$/;"	v
+mmc_prg_pages_number	src/emu6502/mmc.c	/^int mmc_prg_pages_number, mmc_chr_pages_number;$/;"	v
+mmc_read	src/emu6502/mmc.c	/^inline byte mmc_read(word address)$/;"	f
+mmc_write	src/emu6502/mmc.c	/^inline void mmc_write(word address, byte data)$/;"	f
+negative_bp	include/nes/cpu-internal.h	/^    negative_bp   = 7$/;"	e	enum:__anon3
+negative_flag	include/nes/cpu-internal.h	/^    negative_flag  = 0x80$/;"	e	enum:__anon2
+nes_draw_pixel	src/fce/hal.c	/^void nes_draw_pixel(Pixel *p)$/;"	f
+nes_flip_display	src/fce/hal.c	/^void nes_flip_display()$/;"	f
+nes_hal_init	src/fce/hal.c	/^void nes_hal_init()$/;"	f
+nes_key_state	src/fce/hal.c	/^int nes_key_state(int b)$/;"	f
+nes_set_bg_color	src/fce/hal.c	/^void nes_set_bg_color(int r, int g, int b, int c)$/;"	f
+off	boot/boot.h	/^	unsigned int off;$/;"	m	struct:ProgramHeader
+offset_15_0	include/x86/memory.h	/^	uint32_t offset_15_0      : 16;$/;"	m	struct:GateDescriptor
+offset_31_16	include/x86/memory.h	/^	uint32_t offset_31_16     : 16;$/;"	m	struct:GateDescriptor
+op_address	include/nes/cpu-internal.h	/^int op_value, op_address; \/\/ Arguments for current instruction$/;"	v
+op_code	include/nes/cpu-internal.h	/^byte op_code;             \/\/ Current instruction code$/;"	v
+op_cycles	include/nes/cpu-internal.h	/^int op_cycles;            \/\/ Additional instruction cycles used (e.g. when paging occurs)$/;"	v
+op_value	include/nes/cpu-internal.h	/^int op_value, op_address; \/\/ Arguments for current instruction$/;"	v
+out_byte	boot/boot.h	/^out_byte(short port, char data) {$/;"	f
+out_byte	include/x86/io.h	/^out_byte(uint16_t port, int8_t data) {$/;"	f
+overflow_bp	include/nes/cpu-internal.h	/^    overflow_bp   = 6,$/;"	e	enum:__anon3
+overflow_flag	include/nes/cpu-internal.h	/^    overflow_flag  = 0x40,$/;"	e	enum:__anon2
+p	src/emu6502/psg.c	/^static int p = 10;$/;"	v	file:
+pad0	include/x86/memory.h	/^	uint32_t pad0             : 8;$/;"	m	struct:GateDescriptor
+paddr	boot/boot.h	/^	unsigned int paddr;$/;"	m	struct:ProgramHeader
+pal	include/nes/fce.h	/^} pal;$/;"	t	typeref:struct:__pal
+palette	include/nes/fce.h	/^static const pal palette[64] = {$/;"	v
+phentsize	boot/boot.h	/^	unsigned short phentsize;$/;"	m	struct:ELFHeader
+phnum	boot/boot.h	/^	unsigned short phnum;$/;"	m	struct:ELFHeader
+phoff	boot/boot.h	/^	unsigned int   phoff;$/;"	m	struct:ELFHeader
+pixbuf_add	include/nes/hal.h	27;"	d
+pixbuf_clean	include/nes/hal.h	21;"	d
+play	src/main.c	/^play(void) { \/\/主循环$/;"	f
+ppu	include/nes/ppu-internal.h	/^PPU_STATE ppu;$/;"	v
+ppu_2007_first_read	src/emu6502/ppu.c	/^bool ppu_2007_first_read;$/;"	v
+ppu_addr_latch	src/emu6502/ppu.c	/^byte ppu_addr_latch;$/;"	v
+ppu_background_pattern_table_address	src/emu6502/ppu.c	/^inline word ppu_background_pattern_table_address()                  { return common_bit_set(ppu.PPUCTRL, 4) ? 0x1000 : 0x0000; }$/;"	f
+ppu_base_nametable_address	src/emu6502/ppu.c	/^inline word ppu_base_nametable_address()                            { return ppu_base_nametable_addresses[ppu.PPUCTRL & 0x3];  }$/;"	f
+ppu_base_nametable_addresses	include/nes/ppu-internal.h	/^static const word ppu_base_nametable_addresses[4] = { 0x2000, 0x2400, 0x2800, 0x2C00 };$/;"	v
+ppu_copy	src/emu6502/ppu.c	/^inline void ppu_copy(word address, byte *source, int length)$/;"	f
+ppu_cycle	src/emu6502/ppu.c	/^void ppu_cycle()$/;"	f
+ppu_draw_background_scanline	src/emu6502/ppu.c	/^void ppu_draw_background_scanline(bool mirror)$/;"	f
+ppu_draw_sprite_scanline	src/emu6502/ppu.c	/^void ppu_draw_sprite_scanline()$/;"	f
+ppu_generates_nmi	src/emu6502/ppu.c	/^inline bool ppu_generates_nmi()                                     { return common_bit_set(ppu.PPUCTRL, 7);                   }$/;"	f
+ppu_get_real_ram_address	src/emu6502/ppu.c	/^inline word ppu_get_real_ram_address(word address)$/;"	f
+ppu_in_vblank	src/emu6502/ppu.c	/^inline bool ppu_in_vblank()                                         { return common_bit_set(ppu.PPUSTATUS, 7); }$/;"	f
+ppu_init	src/emu6502/ppu.c	/^void ppu_init()$/;"	f
+ppu_intensifies_blues	src/emu6502/ppu.c	/^inline bool ppu_intensifies_blues()                                 { return common_bit_set(ppu.PPUMASK, 7); }$/;"	f
+ppu_intensifies_greens	src/emu6502/ppu.c	/^inline bool ppu_intensifies_greens()                                { return common_bit_set(ppu.PPUMASK, 6); }$/;"	f
+ppu_intensifies_reds	src/emu6502/ppu.c	/^inline bool ppu_intensifies_reds()                                  { return common_bit_set(ppu.PPUMASK, 5); }$/;"	f
+ppu_io_read	src/emu6502/ppu.c	/^inline byte ppu_io_read(word address)$/;"	f
+ppu_io_write	src/emu6502/ppu.c	/^inline void ppu_io_write(word address, byte data)$/;"	f
+ppu_l_h_addition_flip_table	include/nes/ppu-internal.h	/^byte ppu_l_h_addition_flip_table[256][256][8];$/;"	v
+ppu_l_h_addition_table	include/nes/ppu-internal.h	/^byte ppu_l_h_addition_table[256][256][8];$/;"	v
+ppu_latch	include/nes/ppu-internal.h	/^byte ppu_latch;$/;"	v
+ppu_ram_read	src/emu6502/ppu.c	/^inline byte ppu_ram_read(word address)$/;"	f
+ppu_ram_write	src/emu6502/ppu.c	/^inline void ppu_ram_write(word address, byte data)$/;"	f
+ppu_renders_grayscale	src/emu6502/ppu.c	/^inline bool ppu_renders_grayscale()                                 { return common_bit_set(ppu.PPUMASK, 0); }$/;"	f
+ppu_run	src/emu6502/ppu.c	/^void ppu_run(int cycles)$/;"	f
+ppu_screen_background	include/nes/ppu-internal.h	/^byte ppu_screen_background[264][248];$/;"	v
+ppu_set_background_color	src/emu6502/ppu.c	/^void ppu_set_background_color(byte color)$/;"	f
+ppu_set_in_vblank	src/emu6502/ppu.c	/^inline void ppu_set_in_vblank(bool yesno)                           { common_modify_bitb(&ppu.PPUSTATUS, 7, yesno); }$/;"	f
+ppu_set_intensifies_blues	src/emu6502/ppu.c	/^inline void ppu_set_intensifies_blues(bool yesno)                   { common_modify_bitb(&ppu.PPUMASK, 7, yesno); }$/;"	f
+ppu_set_intensifies_greens	src/emu6502/ppu.c	/^inline void ppu_set_intensifies_greens(bool yesno)                  { common_modify_bitb(&ppu.PPUMASK, 6, yesno); }$/;"	f
+ppu_set_intensifies_reds	src/emu6502/ppu.c	/^inline void ppu_set_intensifies_reds(bool yesno)                    { common_modify_bitb(&ppu.PPUMASK, 5, yesno); }$/;"	f
+ppu_set_mirroring	src/emu6502/ppu.c	/^void ppu_set_mirroring(byte mirroring)$/;"	f
+ppu_set_renders_grayscale	src/emu6502/ppu.c	/^inline void ppu_set_renders_grayscale(bool yesno)                   { common_modify_bitb(&ppu.PPUMASK, 0, yesno); }$/;"	f
+ppu_set_shows_background	src/emu6502/ppu.c	/^inline void ppu_set_shows_background(bool yesno)                    { common_modify_bitb(&ppu.PPUMASK, 3, yesno); }$/;"	f
+ppu_set_shows_background_in_leftmost_8px	src/emu6502/ppu.c	/^inline void ppu_set_shows_background_in_leftmost_8px(bool yesno)    { common_modify_bitb(&ppu.PPUMASK, 1, yesno); }$/;"	f
+ppu_set_shows_sprites	src/emu6502/ppu.c	/^inline void ppu_set_shows_sprites(bool yesno)                       { common_modify_bitb(&ppu.PPUMASK, 4, yesno); }$/;"	f
+ppu_set_shows_sprites_in_leftmost_8px	src/emu6502/ppu.c	/^inline void ppu_set_shows_sprites_in_leftmost_8px(bool yesno)       { common_modify_bitb(&ppu.PPUMASK, 2, yesno); }$/;"	f
+ppu_set_sprite_0_hit	src/emu6502/ppu.c	/^inline void ppu_set_sprite_0_hit(bool yesno)                        { common_modify_bitb(&ppu.PPUSTATUS, 6, yesno); }$/;"	f
+ppu_set_sprite_overflow	src/emu6502/ppu.c	/^inline void ppu_set_sprite_overflow(bool yesno)                     { common_modify_bitb(&ppu.PPUSTATUS, 5, yesno); }$/;"	f
+ppu_shows_background	src/emu6502/ppu.c	/^inline bool ppu_shows_background()                                  { return common_bit_set(ppu.PPUMASK, 3); }$/;"	f
+ppu_shows_background_in_leftmost_8px	src/emu6502/ppu.c	/^inline bool ppu_shows_background_in_leftmost_8px()                  { return common_bit_set(ppu.PPUMASK, 1); }$/;"	f
+ppu_shows_sprites	src/emu6502/ppu.c	/^inline bool ppu_shows_sprites()                                     { return common_bit_set(ppu.PPUMASK, 4); }$/;"	f
+ppu_shows_sprites_in_leftmost_8px	src/emu6502/ppu.c	/^inline bool ppu_shows_sprites_in_leftmost_8px()                     { return common_bit_set(ppu.PPUMASK, 2); }$/;"	f
+ppu_sprite_0_hit	src/emu6502/ppu.c	/^inline bool ppu_sprite_0_hit()                                      { return common_bit_set(ppu.PPUSTATUS, 6); }$/;"	f
+ppu_sprite_height	src/emu6502/ppu.c	/^inline byte ppu_sprite_height()                                     { return common_bit_set(ppu.PPUCTRL, 5) ? 16 : 8;          }$/;"	f
+ppu_sprite_hit_occured	include/nes/ppu-internal.h	/^bool ppu_sprite_hit_occured = false;$/;"	v
+ppu_sprite_overflow	src/emu6502/ppu.c	/^inline bool ppu_sprite_overflow()                                   { return common_bit_set(ppu.PPUSTATUS, 5); }$/;"	f
+ppu_sprite_palette	src/emu6502/ppu.c	/^byte ppu_sprite_palette[4][4];$/;"	v
+ppu_sprite_pattern_table_address	src/emu6502/ppu.c	/^inline word ppu_sprite_pattern_table_address()                      { return common_bit_set(ppu.PPUCTRL, 3) ? 0x1000 : 0x0000; }$/;"	f
+ppu_sprram_write	src/emu6502/ppu.c	/^void ppu_sprram_write(byte data)$/;"	f
+ppu_vram_address_increment	src/emu6502/ppu.c	/^inline byte ppu_vram_address_increment()                            { return common_bit_set(ppu.PPUCTRL, 2) ? 32 : 1;          }$/;"	f
+prepare_buffer	src/device/video.c	/^prepare_buffer(void) {$/;"	f
+present	include/x86/memory.h	/^	uint32_t present          : 1;$/;"	m	struct:GateDescriptor
+prev_write	src/emu6502/psg.c	/^static byte prev_write;$/;"	v	file:
+prg_block_count	src/fce/fce.c	/^    byte prg_block_count;$/;"	m	struct:__anon1	file:
+privilege_level	include/x86/memory.h	/^	uint32_t privilege_level  : 2;$/;"	m	struct:GateDescriptor
+psg_io_read	src/emu6502/psg.c	/^inline byte psg_io_read(word address)$/;"	f
+psg_io_write	src/emu6502/psg.c	/^inline void psg_io_write(word address, byte data)$/;"	f
+qword	include/nes/common.h	/^typedef uint64_t qword;$/;"	t
+r	include/nes/fce.h	/^	int r;$/;"	m	struct:__pal
+r	include/nes/hal.h	/^	int r, g, b, c;$/;"	m	struct:Pixel
+readsect	boot/main.c	/^readsect(void *dst, int offset) {$/;"	f
+readseg	boot/main.c	/^readseg(unsigned char *pa, int count, int offset) {$/;"	f
+ready	include/nes/ppu-internal.h	/^    bool ready;$/;"	m	struct:__anon5
+reserved	src/fce/fce.c	/^    byte reserved[8];$/;"	m	struct:__anon1	file:
+rom	src/litenes.c	/^static char rom[1048576];$/;"	v	file:
+rom_type	src/fce/fce.c	/^    word rom_type;$/;"	m	struct:__anon1	file:
+romread	src/fce/fce.c	/^romread(char *rom, void *buf, int size)$/;"	f
+save_idt	include/x86/cpu.h	/^save_idt(void *addr, uint32_t size) {$/;"	f
+scanline	include/nes/ppu-internal.h	/^    int x, scanline;$/;"	m	struct:__anon5
+scroll_received_x	include/nes/ppu-internal.h	/^    bool scroll_received_x;$/;"	m	struct:__anon5
+segment	include/x86/memory.h	/^	uint32_t segment          : 16;$/;"	m	struct:GateDescriptor
+set_intr	src/irq/idt.c	/^set_intr(struct GateDescriptor *ptr, uint32_t selector, uint32_t offset, uint32_t dpl) {$/;"	f	file:
+set_trap	src/irq/idt.c	/^set_trap(struct GateDescriptor *ptr, uint32_t selector, uint32_t offset, uint32_t dpl) {$/;"	f	file:
+shentsize	boot/boot.h	/^	unsigned short shentsize;$/;"	m	struct:ELFHeader
+shnum	boot/boot.h	/^	unsigned short shnum;$/;"	m	struct:ELFHeader
+shoff	boot/boot.h	/^	unsigned int   shoff;$/;"	m	struct:ELFHeader
+shstrndx	boot/boot.h	/^	unsigned short shstrndx;$/;"	m	struct:ELFHeader
+signature	src/fce/fce.c	/^    char signature[4];$/;"	m	struct:__anon1	file:
+sin	src/main.c	/^float sin(float x) {$/;"	f
+size	include/nes/hal.h	/^	int size;$/;"	m	struct:PixelBuf
+size_t	include/common/types.h	/^typedef unsigned int   size_t;$/;"	t
+start	boot/start.S	/^start:$/;"	l
+start32	boot/start.S	/^start32:$/;"	l
+system	include/x86/memory.h	/^	uint32_t system           : 1;$/;"	m	struct:GateDescriptor
+table	include/nes/rom.h	/^static int table[1024576]={$/;"	v
+timers	src/main.c	/^static volatile int timers = 0, live = 0;$/;"	v	file:
+type	boot/boot.h	/^	unsigned int type;$/;"	m	struct:ProgramHeader
+type	boot/boot.h	/^	unsigned short type;$/;"	m	struct:ELFHeader
+type	include/x86/memory.h	/^	uint32_t type             : 4;$/;"	m	struct:GateDescriptor
+uint16_t	include/common/types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	include/common/types.h	/^typedef unsigned int   uint32_t;$/;"	t
+uint8_t	include/common/types.h	/^typedef unsigned char  uint8_t;$/;"	t
+unused_bp	include/nes/cpu-internal.h	/^    unused_bp     = 5,$/;"	e	enum:__anon3
+unused_flag	include/nes/cpu-internal.h	/^    unused_flag    = 0x20,$/;"	e	enum:__anon2
+vaddr	boot/boot.h	/^	unsigned int vaddr;$/;"	m	struct:ProgramHeader
+vbuf	src/device/video.c	/^static uint8_t vbuf[SCR_SIZE];$/;"	v	file:
+version	boot/boot.h	/^	unsigned int   version;$/;"	m	struct:ELFHeader
+vmem	src/device/video.c	/^uint8_t *vmem = vbuf;$/;"	v
+vref	src/device/video.c	/^static uint8_t vref[SCR_SIZE];$/;"	v	file:
+vtx	src/fce/hal.c	/^static ALLEGRO_VERTEX vtx[1000000];$/;"	v	file:
+vtx_sz	src/fce/hal.c	/^int vtx_sz = 0;$/;"	v
+wait_for_frame	src/fce/hal.c	/^void wait_for_frame()$/;"	f
+wait_for_interrupt	include/x86/cpu.h	/^wait_for_interrupt() {$/;"	f
+waitdisk	boot/main.c	/^waitdisk(void) {$/;"	f
+word	include/nes/common.h	/^typedef uint16_t word;$/;"	t
+x	include/nes/hal.h	/^	int x, y;$/;"	m	struct:Pixel
+x	include/nes/ppu-internal.h	/^    int x, scanline;$/;"	m	struct:__anon5
+xxx	include/x86/memory.h	/^	uint32_t edi, esi, ebp, xxx, ebx, edx, ecx, eax;$/;"	m	struct:TrapFrame
+y	include/nes/hal.h	/^	int x, y;$/;"	m	struct:Pixel
+zero_bp	include/nes/cpu-internal.h	/^    zero_bp       = 1,$/;"	e	enum:__anon3
+zero_flag	include/nes/cpu-internal.h	/^    zero_flag      = 0x02,$/;"	e	enum:__anon2
